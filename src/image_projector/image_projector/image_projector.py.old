@@ -1,0 +1,109 @@
+# Problem with this is that the image projector doesnt take into account distortion - refer to the newer one
+
+import rclpy
+from rclpy.node import Node
+from realsense2_camera_msgs.msg import RGBD
+from sensor_msgs.msg import CameraInfo
+from cv_bridge import CvBridge
+from robopoint_interfaces.srv import Get3DCoordinates
+import cv2
+import numpy as np
+
+class RGBDSubscriber(Node):
+    def __init__(self):
+        super().__init__('rgbd_subscriber')
+        # Subscribe to the RGBD topic as you are
+        self.subscription = self.create_subscription(
+            RGBD,
+            '/camera/camera/rgbd',
+            self.listener_callback,
+            10
+        )
+        # Subscribe to the camera info topic for the aligned depth image
+        self.camera_info_subscription = self.create_subscription(
+            CameraInfo,
+            '/camera/camera/aligned_depth_to_color/camera_info',
+            self.camera_info_callback,
+            10
+        )
+        self.bridge = CvBridge()
+        self.rgb_image = None
+        self.depth_image = None
+        self.intrinsics = None
+
+        self.srv = self.create_service(Get3DCoordinates, 'get_3d_coordinates', self.get_3d_coordinates_callback)
+
+    def camera_info_callback(self, msg: CameraInfo):
+        # Extract the intrinsics from CameraInfo.k[9]:
+        #  K = [fx,  0, cx,
+        #       0, fy, cy,
+        #       0,  0,  1]
+        self.intrinsics = {
+            'width' : msg.width,
+            'height': msg.height,
+            'fx' : msg.k[0],
+            'fy' : msg.k[4],
+            'cx' : msg.k[2],
+            'cy' : msg.k[5]
+        }
+        self.get_logger().info(f"Camera intrinsics received: {self.intrinsics}")
+
+    def listener_callback(self, msg: RGBD):
+        try:
+            self.rgb_image = self.bridge.imgmsg_to_cv2(msg.rgb, desired_encoding='bgr8')
+        except Exception as e:
+            self.get_logger().error("Error converting RGB image: {}".format(e))
+            return
+
+        try:
+            self.depth_image = self.bridge.imgmsg_to_cv2(msg.depth, desired_encoding='passthrough')
+        except Exception as e:
+            self.get_logger().error("Error converting depth image: {}".format(e))
+            return
+
+    def get_3d_coordinates_callback(self, request, response):
+        if self.rgb_image is None or self.depth_image is None:
+            self.get_logger().error("No images received yet.")
+            return response
+
+        if self.intrinsics is None:
+            self.get_logger().error("No camera intrinsics received yet.")
+            return response
+
+        # Get the 2D point from the request (assumed already normalized to pixel coordinates)
+        x, y = request.x, request.y
+
+        if x < 0 or x >= self.rgb_image.shape[1] or y < 0 or y >= self.rgb_image.shape[0]:
+            self.get_logger().error("Coordinates out of bounds.")
+            return response
+
+        depth_value = self.depth_image[y, x]
+        # Optional: if depth scale conversion is necessary, apply it here.
+        if np.isnan(depth_value) or depth_value == 0:
+            self.get_logger().error("Invalid depth value at the given coordinates.")
+            return response
+
+        # Deproject pixel to 3D point using the pinhole camera model:
+        fx = self.intrinsics['fx']
+        fy = self.intrinsics['fy']
+        cx = self.intrinsics['cx']
+        cy = self.intrinsics['cy']
+
+        z = depth_value
+        x_3d = (x - cx) * z / fx
+        y_3d = (y - cy) * z / fy
+
+        response.x = float(x_3d)
+        response.y = float(y_3d)
+        response.z = float(z)
+
+        return response
+
+def main(args=None):
+    rclpy.init(args=args)
+    rgbd_subscriber = RGBDSubscriber()
+    rclpy.spin(rgbd_subscriber)
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
