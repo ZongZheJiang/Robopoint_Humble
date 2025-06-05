@@ -1,3 +1,4 @@
+import rclpy.logging
 from robopoint_interfaces.srv import Query, MoveToPoint
 
 import rclpy
@@ -7,6 +8,7 @@ from cv_bridge import CvBridge
 from torch import rsub
 from transformers.models import llama
 from robopoint.run_llm_service import llm_service
+from rclpy.utilities import remove_ros_args
 
 # deps to convert cv2 to PIL
 import cv2
@@ -41,8 +43,19 @@ class QueryService(Node):
         )
         self.bridge = CvBridge()
         self.rgb_image = None
-        self.move_to_point_client = self.create_client(MoveToPoint, 'move_to_point')
-        self.srv = self.create_service(Query, 'query_service', self.query_callback)
+        self.move_to_point_client = self.create_client(
+            MoveToPoint, 
+            'move_to_point'
+        )
+
+        while not self.move_to_point_client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info("service not available, waiting again... ")
+        
+        self.srv = self.create_service(
+            Query, 
+            'query_service', 
+            self.query_callback
+        )
 
     def listener_callback(self, msg: RGBD):
         '''Callback function for the RGBD subscriber to receive RGB and depth images.'''
@@ -85,21 +98,42 @@ class QueryService(Node):
 
 
 def main(args=None):
-    rclpy.init()
+
+    rclpy.init(args=args)
+
+    remaining_argv = remove_ros_args(args=sys.argv)
+
     # if args is None:
     #     args = sys.argv[1:]
-    args = sys.argv[1:]
-    parser = argparse.ArgumentParser(description='Query service node')
-    parser.add_argument('--filepath', type=str, help='Absolute filepath to save a debug image to')
-    parsed_args = parser.parse_args(args)
+    # args = sys.argv[1:]
 
+    parser = argparse.ArgumentParser(
+        description='Query service node',
+        prog=remaining_argv[0]
+    )
+    parser.add_argument(
+        '--filepath', 
+        type=str, 
+        help='Absolute filepath to save a debug image to'
+    )
+
+    parsed_args = parser.parse_args(args=remaining_argv[1:])
     
+    # print(f"parsed args: {parsed_args}")
+    # rclpy.logging.get_logger('query').info(f"parsed args: {parsed_args}")
+
+    node_logger = rclpy.logging.get_logger('query_main') # Get a logger
+    node_logger.info(f"Parsed custom args: filepath='{parsed_args.filepath}'")
+    print(f"PRINT from main: Parsed custom args: filepath='{parsed_args.filepath}'")
 
     query_service = QueryService(parsed_args.filepath)
-
-    rclpy.spin(query_service)
-
-    rclpy.shutdown()
+    try: 
+        rclpy.spin(query_service)
+    except KeyboardInterrupt:
+        node_logger.info("Keyboard interrupt, shutting down.")
+    finally: 
+        query_service.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':

@@ -45,37 +45,27 @@ def generate_launch_description():
 
     image_projector_node = Node(
         package='image_projector',
-        namespace='image_projector', # Namespacing helps avoid topic/service clashes
         executable='image_projector',
         output='screen'
     )
 
     move_arm_node = Node(
         package='robot_control',
-        namespace='robot_control',
         executable='move_arm',
         output='screen'
     )
 
     query_node = Node(
         package='robopoint_llm',
-        namespace='robopoint_llm',
         executable='query',
-        output='screen'
-    )
-
-    realsense_node = Node(
-        package='image_projector',
-        namespace='realsense_node',
-        executable='realsense_projector',
-        output='screen'
+        output='screen',
+        arguments=['--filepath', "/home/evas/interbotix_ws/debug.jpg"]
     )
 
     ld = LaunchDescription()
 
     ld.add_action(interbotix_xsarm_launch)
     ld.add_action(realsense_camera_launch)
-    ld.add_action(realsense_node)
     ld.add_action(image_projector_node)
     ld.add_action(query_node)
     ld.add_action(move_arm_node)

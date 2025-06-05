@@ -44,6 +44,9 @@ class MoveArmNode(Node):
             'get_3d_coordinates'
         )
 
+        while not self.get_3d_coordinates_client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info("service not available, waiting again... ")
+
         self.desired_joint_states_subscription = self.create_subscription(
             Float32MultiArray,
             'desired_joint_states',
