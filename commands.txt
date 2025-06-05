@@ -1,0 +1,1 @@
+ros2 service call /move_to_point  robopoint_interfaces/srv/MoveToPoint "{x: 0.5, y: 0.5, z: 0.2}"
