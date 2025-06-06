@@ -35,6 +35,9 @@ def generate_launch_description():
             'pointcloud.enable': 'true',       
             'align_depth.enable': 'true',     
             'enable_sync': 'true', 
+            'enable_rgbd': 'true',
+            'enable_color': 'true',
+            'enable_depth': 'true',
             'depth_module.profile': '640x480x30', 
             'rgb_camera.profile': '640x480x30',
             'initial_reset': 'true'
