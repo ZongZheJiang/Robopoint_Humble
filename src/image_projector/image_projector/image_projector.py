@@ -35,6 +35,7 @@ class RGBDSubscriber(Node):
         # Class variables
         self.rgb_image = None
         self.depth_image = None
+        self.depth_encoding = None 
         self.cam_model = None
         self.srv = self.create_service(
             Get3DCoordinates, 
@@ -56,6 +57,7 @@ class RGBDSubscriber(Node):
             return
 
         try:
+            self.depth_encoding = msg.depth.encoding
             self.depth_image = self.bridge.imgmsg_to_cv2(msg.depth, desired_encoding='passthrough')
         except Exception as e:
             self.get_logger().error("Error converting depth image: {}".format(e))
@@ -72,10 +74,12 @@ class RGBDSubscriber(Node):
         # Ensure images and camera info have been received
         if self.rgb_image is None or self.depth_image is None:
             self.get_logger().error("No images received.")
+            response.x = response.y = response.z = float('nan')
             return response
 
         if self.cam_model is None:
             self.get_logger().error("Camera intrinsics not set yet.")
+            response.x = response.y = response.z = float('nan')
             return response
 
         u, v = request.x, request.y
@@ -92,11 +96,27 @@ class RGBDSubscriber(Node):
 
         # Get the depth value from the depth image at pixel (u, v)
         depth_value = self.depth_image[v, u]
+
         self.get_logger().info(f"Depth image:\n{self.depth_image}")
         # A common issue: depth_image might be scaled (e.g., in millimeters instead of meters);
         # ensure that the depth unit is in meters or apply the appropriate conversion.
         if np.isnan(depth_value) or depth_value == 0:
             self.get_logger().error("Invalid depth value at the given coordinates.")
+            return response
+
+        if self.depth_encoding == '16UC1':
+            # Integer value in millimeters, convert to meters (float)
+            depth_value /= 1000.0
+        elif self.depth_encoding == '32FC1':
+            # Already a float in meters
+            pass
+        else:
+            # Unsupported encoding, log a warning and exit
+            self.get_logger().error(
+                f"Unsupported depth encoding: '{self.depth_encoding}'. "
+                "Cannot reliably convert to meters."
+            )
+            response.x = response.y = response.z = float('nan')
             return response
 
         # Use the image_geometry method to get a 3D ray from the pixel coordinates.
