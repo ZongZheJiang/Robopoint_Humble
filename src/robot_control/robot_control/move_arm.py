@@ -1,5 +1,6 @@
 import rclpy
 from rclpy.node import Node
+from rclpy.executors import MultiThreadedExecutor
 from robopoint_interfaces.srv import Get3DCoordinates, MoveToPoint
 import tf2_ros
 import tf2_geometry_msgs
@@ -99,6 +100,9 @@ class MoveArmNode(Node):
             response.success = False
             return response
         camera_coords = future.result()  # x, y, z in camera frame
+
+        self.get_logger().info("getting 3D coordinates successful. ")
+
         self.get_logger().info(f"3D point in camera frame: {camera_coords.x:.3f}, {camera_coords.y:.3f}, {camera_coords.z:.3f}")
 
         # 2) Transform the point from camera_link to base_link using TF
@@ -147,11 +151,14 @@ def main(args=None):
     print('Hi from robot_control.')
     rclpy.init(args=args)
     node = MoveArmNode()
+    executor = MultiThreadedExecutor()
+    executor.add_node(node)
     try:
-        rclpy.spin(node)
+        rclpy.spin(executor)
     except KeyboardInterrupt:
         pass
     finally:
+        executor.shutdown()
         node.destroy_node()
         rclpy.shutdown()
 
