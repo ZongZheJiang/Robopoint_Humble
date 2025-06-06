@@ -1,11 +1,19 @@
+import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
 from launch.substitutions import PathJoinSubstitution
+from ament_index_python.packages import get_package_share_directory
+
+package_name = "robot_startup"
 
 def generate_launch_description():
+
+    pkg_path = get_package_share_directory(package_name)
+
+    rviz_config_file = os.path.join(pkg_path, 'rviz', 'xsarm_description.rviz')
 
     interbotix_xsarm_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
@@ -20,6 +28,7 @@ def generate_launch_description():
             'use_sim':'true', 
             'use_rviz': 'true',
             'use_joint_pub_gui': 'true',
+            'rviz_config': rviz_config_file
         }.items()
     )
 
