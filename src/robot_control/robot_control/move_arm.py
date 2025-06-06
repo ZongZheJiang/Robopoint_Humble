@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.executors import MultiThreadedExecutor
+from rclpy.callback_groups import ReentrantCallbackGroup
 from robopoint_interfaces.srv import Get3DCoordinates, MoveToPoint
 import tf2_ros
 import tf2_geometry_msgs
@@ -35,6 +36,8 @@ class MoveArmNode(Node):
     def __init__(self):
         super().__init__('move_arm_node')
 
+        self.callback_group = ReentrantCallbackGroup()
+
         # Create a TF buffer and listener to handle lookup_transform
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
@@ -42,7 +45,8 @@ class MoveArmNode(Node):
         # Create a client for the get_3d_coordinates service
         self.get_3d_coordinates_client = self.create_client(
             Get3DCoordinates,
-            'get_3d_coordinates'
+            'get_3d_coordinates',
+            callback_group = self.callback_group
         )
 
         while not self.get_3d_coordinates_client.wait_for_service(timeout_sec=1.0):
@@ -60,7 +64,8 @@ class MoveArmNode(Node):
         self.move_to_point_srv = self.create_service(
             MoveToPoint,
             'move_to_point',
-            self.move_to_point_callback
+            self.move_to_point_callback,
+            callback_group = self.callback_group
         )
 
         # Create the Interbotix arm object (adjust robot type/model as needed)
@@ -154,7 +159,7 @@ def main(args=None):
     executor = MultiThreadedExecutor()
     executor.add_node(node)
     try:
-        rclpy.spin(executor)
+        executor.spin()
     except KeyboardInterrupt:
         pass
     finally:
