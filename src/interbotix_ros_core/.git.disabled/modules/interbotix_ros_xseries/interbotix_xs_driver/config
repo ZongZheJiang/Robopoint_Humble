@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../interbotix_ros_xseries/interbotix_xs_driver
+[remote "origin"]
+	url = https://github.com/Interbotix/interbotix_xs_driver.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "ros2"]
+	remote = origin
+	merge = refs/heads/ros2
