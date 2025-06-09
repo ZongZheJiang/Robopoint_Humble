@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robopoint_interfaces__py",
+		"source" : "/home/evas/Robopoint_Humble/build/robopoint_interfaces/robopoint_interfaces__py"
+	}
+}

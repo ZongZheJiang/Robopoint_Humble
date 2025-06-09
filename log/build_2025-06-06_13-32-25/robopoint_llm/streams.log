@@ -1,0 +1,21 @@
+[1.238s] Invoking command in '/home/evas/Robopoint_Humble/src/robopoint_llm': PYTHONPATH=/home/evas/Robopoint_Humble/build/robopoint_llm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robopoint_llm build --build-base /home/evas/Robopoint_Humble/build/robopoint_llm/build install --record /home/evas/Robopoint_Humble/build/robopoint_llm/install.log --single-version-externally-managed install_data
+[1.431s] running egg_info
+[1.432s] writing ../../build/robopoint_llm/robopoint_llm.egg-info/PKG-INFO
+[1.432s] writing dependency_links to ../../build/robopoint_llm/robopoint_llm.egg-info/dependency_links.txt
+[1.432s] writing entry points to ../../build/robopoint_llm/robopoint_llm.egg-info/entry_points.txt
+[1.432s] writing requirements to ../../build/robopoint_llm/robopoint_llm.egg-info/requires.txt
+[1.432s] writing top-level names to ../../build/robopoint_llm/robopoint_llm.egg-info/top_level.txt
+[1.434s] reading manifest file '../../build/robopoint_llm/robopoint_llm.egg-info/SOURCES.txt'
+[1.436s] writing manifest file '../../build/robopoint_llm/robopoint_llm.egg-info/SOURCES.txt'
+[1.436s] running build
+[1.436s] running build_py
+[1.438s] running install
+[1.438s] running install_lib
+[1.439s] running install_data
+[1.439s] running install_egg_info
+[1.441s] removing '/home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm-0.0.0-py3.10.egg-info' (and everything under it)
+[1.441s] Copying ../../build/robopoint_llm/robopoint_llm.egg-info to /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm-0.0.0-py3.10.egg-info
+[1.442s] running install_scripts
+[1.458s] Installing query script to /home/evas/Robopoint_Humble/install/robopoint_llm/lib/robopoint_llm
+[1.459s] writing list of installed files to '/home/evas/Robopoint_Humble/build/robopoint_llm/install.log'
+[1.483s] Invoked command in '/home/evas/Robopoint_Humble/src/robopoint_llm' returned '0': PYTHONPATH=/home/evas/Robopoint_Humble/build/robopoint_llm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robopoint_llm build --build-base /home/evas/Robopoint_Humble/build/robopoint_llm/build install --record /home/evas/Robopoint_Humble/build/robopoint_llm/install.log --single-version-externally-managed install_data

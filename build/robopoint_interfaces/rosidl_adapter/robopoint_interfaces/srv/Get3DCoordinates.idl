@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robopoint_interfaces/srv/Get3DCoordinates.srv
+// generated code does not contain a copyright notice
+
+
+module robopoint_interfaces {
+  module srv {
+    struct Get3DCoordinates_Request {
+      float x;
+
+      float y;
+    };
+    struct Get3DCoordinates_Response {
+      float x;
+
+      float y;
+
+      float z;
+    };
+  };
+};

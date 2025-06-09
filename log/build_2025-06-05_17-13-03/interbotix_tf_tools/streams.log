@@ -1,0 +1,84 @@
+[0.226s] Invoking command in '/home/evas/Robopoint_Humble/build/interbotix_tf_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake /home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_tf_tools -DCMAKE_INSTALL_PREFIX=/home/evas/Robopoint_Humble/install/interbotix_tf_tools
+[0.494s] -- The C compiler identification is GNU 11.4.0
+[0.494s] -- The CXX compiler identification is GNU 11.4.0
+[0.494s] -- Detecting C compiler ABI info
+[0.494s] -- Detecting C compiler ABI info - done
+[0.494s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.494s] -- Detecting C compile features
+[0.494s] -- Detecting C compile features - done
+[0.494s] -- Detecting CXX compiler ABI info
+[0.494s] -- Detecting CXX compiler ABI info - done
+[0.494s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.494s] -- Detecting CXX compile features
+[0.494s] -- Detecting CXX compile features - done
+[0.494s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.641s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.783s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.835s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.844s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.858s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.874s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.896s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.935s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.985s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.991s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.092s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.117s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.159s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.172s] -- Looking for pthread.h
+[1.238s] -- Looking for pthread.h - found
+[1.238s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.321s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.322s] -- Found Threads: TRUE  
+[1.361s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.403s] -- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)
+[1.473s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.529s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.643s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.644s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.644s] -- Configured cppcheck include dirs: /home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_tf_tools/include
+[1.644s] -- Configured cppcheck exclude dirs and/or files: 
+[1.646s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.646s] -- Configured cpplint exclude dirs and/or files: 
+[1.647s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.648s] -- Added test 'lint_cmake' to check CMake code style
+[1.650s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.652s] -- Added test 'uncrustify' to check C / C++ code style
+[1.652s] -- Configured uncrustify additional arguments: 
+[1.653s] -- Added test 'xmllint' to check XML markup files
+[1.656s] -- Configuring done
+[1.666s] -- Generating done
+[1.670s] -- Build files have been written to: /home/evas/Robopoint_Humble/build/interbotix_tf_tools
+[1.682s] Invoked command in '/home/evas/Robopoint_Humble/build/interbotix_tf_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake /home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_tf_tools -DCMAKE_INSTALL_PREFIX=/home/evas/Robopoint_Humble/install/interbotix_tf_tools
+[1.685s] Invoking command in '/home/evas/Robopoint_Humble/build/interbotix_tf_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --build /home/evas/Robopoint_Humble/build/interbotix_tf_tools -- -j16 -l16
+[1.735s] [ 50%] [32mBuilding CXX object CMakeFiles/tf_rebroadcaster.dir/src/tf_rebroadcaster.cpp.o[0m
+[14.489s] [100%] [32m[1mLinking CXX shared library libtf_rebroadcaster.so[0m
+[14.839s] [100%] Built target tf_rebroadcaster
+[14.849s] Invoked command in '/home/evas/Robopoint_Humble/build/interbotix_tf_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --build /home/evas/Robopoint_Humble/build/interbotix_tf_tools -- -j16 -l16
+[14.850s] Invoking command in '/home/evas/Robopoint_Humble/build/interbotix_tf_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --install /home/evas/Robopoint_Humble/build/interbotix_tf_tools
+[14.857s] -- Install configuration: ""
+[14.857s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/lib/libtf_rebroadcaster.so
+[14.860s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_tf_tools/lib/libtf_rebroadcaster.so" to ""
+[14.860s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/lib/interbotix_tf_tools/static_trans_pub.py
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools//config
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools//config/tf_rebroadcaster.yaml
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools//launch
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools//launch/tf_rebroadcaster.launch.py
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools//launch/static_transform_pub.launch.py
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/ament_index/resource_index/package_run_dependencies/interbotix_tf_tools
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/ament_index/resource_index/parent_prefix_path/interbotix_tf_tools
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/environment/ament_prefix_path.sh
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/environment/ament_prefix_path.dsv
+[14.861s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/environment/path.sh
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/environment/path.dsv
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/local_setup.bash
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/local_setup.sh
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/local_setup.zsh
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/local_setup.dsv
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/package.dsv
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/ament_index/resource_index/packages/interbotix_tf_tools
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/ament_index/resource_index/rclcpp_components/interbotix_tf_tools
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/cmake/interbotix_tf_toolsConfig.cmake
+[14.862s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/cmake/interbotix_tf_toolsConfig-version.cmake
+[14.863s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_tf_tools/share/interbotix_tf_tools/package.xml
+[14.865s] Invoked command in '/home/evas/Robopoint_Humble/build/interbotix_tf_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --install /home/evas/Robopoint_Humble/build/interbotix_tf_tools

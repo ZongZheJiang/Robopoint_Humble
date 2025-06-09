@@ -1,0 +1,90 @@
+[0.533s] Invoking command in '/home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_modules': AMENT_PREFIX_PATH=/home/evas/Robopoint_Humble/install/interbotix_xs_sdk:/home/evas/Robopoint_Humble/install/interbotix_xs_driver:/home/evas/Robopoint_Humble/install/interbotix_xs_msgs:/home/evas/Robopoint_Humble/install/interbotix_common_modules:/home/evas/Robopoint_Humble/install/dynamixel_workbench_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/evas/Robopoint_Humble/install/interbotix_xs_sdk:/home/evas/Robopoint_Humble/install/interbotix_xs_driver:/home/evas/Robopoint_Humble/install/interbotix_xs_msgs:/home/evas/Robopoint_Humble/install/dynamixel_workbench_toolbox:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/evas/Robopoint_Humble/install/interbotix_xs_driver/lib:/home/evas/Robopoint_Humble/install/interbotix_xs_msgs/lib:/home/evas/Robopoint_Humble/install/dynamixel_workbench_toolbox/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/evas/Robopoint_Humble/build/interbotix_xs_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages:/home/evas/Robopoint_Humble/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages:/home/evas/Robopoint_Humble/install/interbotix_common_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/interbotix_xs_modules build --build-base /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build install --record /home/evas/Robopoint_Humble/build/interbotix_xs_modules/install.log --single-version-externally-managed install_data
+[0.723s] running egg_info
+[0.723s] creating ../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info
+[0.723s] writing ../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info/PKG-INFO
+[0.723s] writing dependency_links to ../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info/dependency_links.txt
+[0.723s] writing entry points to ../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info/entry_points.txt
+[0.723s] writing requirements to ../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info/requires.txt
+[0.723s] writing top-level names to ../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info/top_level.txt
+[0.724s] writing manifest file '../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info/SOURCES.txt'
+[0.725s] reading manifest file '../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info/SOURCES.txt'
+[0.725s] writing manifest file '../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info/SOURCES.txt'
+[0.725s] running build
+[0.725s] running build_py
+[0.725s] creating /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build
+[0.725s] creating /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib
+[0.725s] creating /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules
+[0.725s] copying interbotix_xs_modules/__init__.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules
+[0.726s] creating /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_common
+[0.726s] copying interbotix_xs_modules/xs_common/xs_common.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_common
+[0.726s] copying interbotix_xs_modules/xs_common/__init__.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_common
+[0.726s] creating /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/gravity_compensation.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/mobile_base.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/arm.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/turret.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/mr_descriptions.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/slate.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/gripper.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/create3.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/locobot.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/hexapod.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.726s] copying interbotix_xs_modules/xs_robot/core.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.727s] copying interbotix_xs_modules/xs_robot/kobuki.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.727s] copying interbotix_xs_modules/xs_robot/__init__.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot
+[0.727s] creating /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_launch
+[0.727s] copying interbotix_xs_modules/xs_launch/xs_launch.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_launch
+[0.727s] copying interbotix_xs_modules/xs_launch/__init__.py -> /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_launch
+[0.727s] running install
+[0.727s] running install_lib
+[0.728s] creating /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules
+[0.728s] creating /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_common
+[0.728s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_common/xs_common.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_common
+[0.728s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_common/__init__.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_common
+[0.728s] creating /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.728s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/gravity_compensation.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.728s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/mobile_base.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.728s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/arm.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.728s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/turret.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.728s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/mr_descriptions.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.728s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/slate.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/gripper.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/create3.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/locobot.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/hexapod.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/core.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/kobuki.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_robot/__init__.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot
+[0.729s] creating /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_launch
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_launch/xs_launch.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_launch
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/xs_launch/__init__.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_launch
+[0.729s] copying /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build/lib/interbotix_xs_modules/__init__.py -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules
+[0.729s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_common/xs_common.py to xs_common.cpython-310.pyc
+[0.730s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_common/__init__.py to __init__.cpython-310.pyc
+[0.730s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/gravity_compensation.py to gravity_compensation.cpython-310.pyc
+[0.730s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/mobile_base.py to mobile_base.cpython-310.pyc
+[0.731s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/arm.py to arm.cpython-310.pyc
+[0.734s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/turret.py to turret.cpython-310.pyc
+[0.736s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/mr_descriptions.py to mr_descriptions.cpython-310.pyc
+[0.737s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/slate.py to slate.cpython-310.pyc
+[0.737s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/gripper.py to gripper.cpython-310.pyc
+[0.738s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/create3.py to create3.cpython-310.pyc
+[0.739s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/locobot.py to locobot.cpython-310.pyc
+[0.739s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/hexapod.py to hexapod.cpython-310.pyc
+[0.743s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/core.py to core.cpython-310.pyc
+[0.744s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/kobuki.py to kobuki.cpython-310.pyc
+[0.744s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/__init__.py to __init__.cpython-310.pyc
+[0.744s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_launch/xs_launch.py to xs_launch.cpython-310.pyc
+[0.745s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_launch/__init__.py to __init__.cpython-310.pyc
+[0.745s] byte-compiling /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/__init__.py to __init__.cpython-310.pyc
+[0.746s] running install_data
+[0.746s] creating /home/evas/Robopoint_Humble/install/interbotix_xs_modules/share/ament_index
+[0.746s] creating /home/evas/Robopoint_Humble/install/interbotix_xs_modules/share/ament_index/resource_index
+[0.746s] creating /home/evas/Robopoint_Humble/install/interbotix_xs_modules/share/ament_index/resource_index/packages
+[0.746s] copying resource/interbotix_xs_modules -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/share/ament_index/resource_index/packages
+[0.746s] copying package.xml -> /home/evas/Robopoint_Humble/install/interbotix_xs_modules/share/interbotix_xs_modules
+[0.746s] running install_egg_info
+[0.747s] Copying ../../../../build/interbotix_xs_modules/interbotix_xs_modules.egg-info to /home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules-0.0.0-py3.10.egg-info
+[0.748s] running install_scripts
+[0.765s] writing list of installed files to '/home/evas/Robopoint_Humble/build/interbotix_xs_modules/install.log'
+[0.783s] Invoked command in '/home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_modules' returned '0': AMENT_PREFIX_PATH=/home/evas/Robopoint_Humble/install/interbotix_xs_sdk:/home/evas/Robopoint_Humble/install/interbotix_xs_driver:/home/evas/Robopoint_Humble/install/interbotix_xs_msgs:/home/evas/Robopoint_Humble/install/interbotix_common_modules:/home/evas/Robopoint_Humble/install/dynamixel_workbench_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/evas/Robopoint_Humble/install/interbotix_xs_sdk:/home/evas/Robopoint_Humble/install/interbotix_xs_driver:/home/evas/Robopoint_Humble/install/interbotix_xs_msgs:/home/evas/Robopoint_Humble/install/dynamixel_workbench_toolbox:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/evas/Robopoint_Humble/install/interbotix_xs_driver/lib:/home/evas/Robopoint_Humble/install/interbotix_xs_msgs/lib:/home/evas/Robopoint_Humble/install/dynamixel_workbench_toolbox/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/evas/Robopoint_Humble/build/interbotix_xs_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/interbotix_xs_modules/lib/python3.10/site-packages:/home/evas/Robopoint_Humble/install/interbotix_xs_msgs/local/lib/python3.10/dist-packages:/home/evas/Robopoint_Humble/install/interbotix_common_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/interbotix_xs_modules build --build-base /home/evas/Robopoint_Humble/build/interbotix_xs_modules/build install --record /home/evas/Robopoint_Humble/build/interbotix_xs_modules/install.log --single-version-externally-managed install_data

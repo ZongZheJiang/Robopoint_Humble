@@ -1,0 +1,338 @@
+[0.235s] Invoking command in '/home/evas/Robopoint_Humble/build/interbotix_perception_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake /home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_perception_toolbox/interbotix_perception_msgs -DCMAKE_INSTALL_PREFIX=/home/evas/Robopoint_Humble/install/interbotix_perception_msgs
+[0.507s] -- The C compiler identification is GNU 11.4.0
+[0.507s] -- The CXX compiler identification is GNU 11.4.0
+[0.507s] -- Detecting C compiler ABI info
+[0.507s] -- Detecting C compiler ABI info - done
+[0.507s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.507s] -- Detecting C compile features
+[0.507s] -- Detecting C compile features - done
+[0.508s] -- Detecting CXX compiler ABI info
+[0.508s] -- Detecting CXX compiler ABI info - done
+[0.508s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.508s] -- Detecting CXX compile features
+[0.508s] -- Detecting CXX compile features - done
+[0.508s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.508s] -- Found ament_cmake_core: 1.3.11 (/opt/ros/humble/share/ament_cmake_core/cmake)
+[0.647s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.711s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.725s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.858s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.918s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.963s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.983s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.350s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.676s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.081s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.110s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.116s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.154s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.154s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.154s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.154s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.183s] -- Found PythonExtra: .so  
+[2.286s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.303s] -- Configuring done
+[2.337s] -- Generating done
+[2.351s] -- Build files have been written to: /home/evas/Robopoint_Humble/build/interbotix_perception_msgs
+[2.361s] Invoked command in '/home/evas/Robopoint_Humble/build/interbotix_perception_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake /home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_perception_toolbox/interbotix_perception_msgs -DCMAKE_INSTALL_PREFIX=/home/evas/Robopoint_Humble/install/interbotix_perception_msgs
+[2.362s] Invoking command in '/home/evas/Robopoint_Humble/build/interbotix_perception_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --build /home/evas/Robopoint_Humble/build/interbotix_perception_msgs -- -j16 -l16
+[2.406s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.426s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.429s] [  3%] Built target ament_cmake_python_copy_interbotix_perception_msgs
+[2.800s] running egg_info
+[2.801s] creating interbotix_perception_msgs.egg-info
+[2.801s] writing interbotix_perception_msgs.egg-info/PKG-INFO
+[2.802s] writing dependency_links to interbotix_perception_msgs.egg-info/dependency_links.txt
+[2.802s] writing top-level names to interbotix_perception_msgs.egg-info/top_level.txt
+[2.802s] writing manifest file 'interbotix_perception_msgs.egg-info/SOURCES.txt'
+[2.805s] reading manifest file 'interbotix_perception_msgs.egg-info/SOURCES.txt'
+[2.806s] writing manifest file 'interbotix_perception_msgs.egg-info/SOURCES.txt'
+[2.851s] [  3%] Built target ament_cmake_python_build_interbotix_perception_msgs_egg
+[3.808s] [  3%] Built target interbotix_perception_msgs__cpp
+[3.832s] [  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.835s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.843s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.128s] [ 10%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/cluster_info_array__functions.c.o[0m
+[4.135s] [ 12%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/msg/detail/cluster_info__functions.c.o[0m
+[4.141s] [ 14%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/filter_params__functions.c.o[0m
+[4.142s] [ 16%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/snap_picture__functions.c.o[0m
+[4.241s] [ 18%] [32m[1mLinking C shared library libinterbotix_perception_msgs__rosidl_generator_c.so[0m
+[4.298s] [ 18%] Built target interbotix_perception_msgs__rosidl_generator_c
+[4.312s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.312s] [ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.315s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.800s] [ 27%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interbotix_perception_msgs/msg/cluster_info__type_support.cpp.o[0m
+[4.800s] [ 27%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interbotix_perception_msgs/srv/snap_picture__type_support.cpp.o[0m
+[4.800s] [ 29%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interbotix_perception_msgs/srv/filter_params__type_support.cpp.o[0m
+[4.800s] [ 30%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interbotix_perception_msgs/srv/cluster_info_array__type_support.cpp.o[0m
+[5.074s] [ 32%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interbotix_perception_msgs/msg/detail/dds_fastrtps/cluster_info__type_support.cpp.o[0m
+[5.094s] [ 34%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interbotix_perception_msgs/srv/detail/dds_fastrtps/cluster_info_array__type_support.cpp.o[0m
+[5.095s] [ 36%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interbotix_perception_msgs/srv/detail/dds_fastrtps/snap_picture__type_support.cpp.o[0m
+[5.098s] [ 38%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interbotix_perception_msgs/msg/detail/cluster_info__type_support.cpp.o[0m
+[5.099s] [ 40%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interbotix_perception_msgs/srv/detail/dds_fastrtps/filter_params__type_support.cpp.o[0m
+[5.101s] [ 41%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interbotix_perception_msgs/srv/detail/filter_params__type_support.cpp.o[0m
+[5.107s] [ 43%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interbotix_perception_msgs/srv/detail/cluster_info_array__type_support.cpp.o[0m
+[5.113s] [ 45%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interbotix_perception_msgs/srv/detail/snap_picture__type_support.cpp.o[0m
+[5.307s] [ 47%] [32m[1mLinking CXX shared library libinterbotix_perception_msgs__rosidl_typesupport_cpp.so[0m
+[5.449s] [ 47%] Built target interbotix_perception_msgs__rosidl_typesupport_cpp
+[5.495s] [ 49%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/interbotix_perception_msgs/msg/cluster_info__type_support.cpp.o[0m
+[5.495s] [ 50%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/interbotix_perception_msgs/srv/cluster_info_array__type_support.cpp.o[0m
+[5.497s] [ 52%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/interbotix_perception_msgs/srv/filter_params__type_support.cpp.o[0m
+[5.500s] [ 54%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/interbotix_perception_msgs/srv/snap_picture__type_support.cpp.o[0m
+[5.512s] [ 56%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interbotix_perception_msgs/msg/detail/cluster_info__type_support.c.o[0m
+[5.521s] [ 58%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interbotix_perception_msgs/srv/detail/cluster_info_array__type_support.c.o[0m
+[5.521s] [ 60%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interbotix_perception_msgs/srv/detail/filter_params__type_support.c.o[0m
+[5.601s] [ 61%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interbotix_perception_msgs/srv/detail/snap_picture__type_support.c.o[0m
+[5.610s] [ 63%] [32m[1mLinking CXX shared library libinterbotix_perception_msgs__rosidl_typesupport_c.so[0m
+[5.654s] [ 65%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interbotix_perception_msgs/srv/detail/cluster_info_array__type_support_c.cpp.o[0m
+[5.661s] [ 67%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interbotix_perception_msgs/msg/detail/cluster_info__type_support_c.cpp.o[0m
+[5.669s] [ 69%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interbotix_perception_msgs/srv/detail/filter_params__type_support_c.cpp.o[0m
+[5.684s] [ 70%] [32mBuilding CXX object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interbotix_perception_msgs/srv/detail/snap_picture__type_support_c.cpp.o[0m
+[5.690s] [ 70%] Built target interbotix_perception_msgs__rosidl_typesupport_c
+[5.695s] [ 72%] [32m[1mLinking C shared library libinterbotix_perception_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.757s] [ 72%] Built target interbotix_perception_msgs__rosidl_typesupport_introspection_c
+[5.895s] [ 74%] [32m[1mLinking CXX shared library libinterbotix_perception_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[5.949s] [ 76%] [32m[1mLinking CXX shared library libinterbotix_perception_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.073s] [ 76%] Built target interbotix_perception_msgs__rosidl_typesupport_introspection_cpp
+[6.131s] [ 76%] Built target interbotix_perception_msgs__rosidl_typesupport_fastrtps_cpp
+[6.189s] [ 78%] [32m[1mLinking CXX shared library libinterbotix_perception_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.311s] [ 78%] Built target interbotix_perception_msgs__rosidl_typesupport_fastrtps_c
+[6.329s] [ 78%] Built target interbotix_perception_msgs
+[6.351s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.237s] [ 80%] Built target interbotix_perception_msgs__py
+[8.269s] [ 81%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_py.dir/rosidl_generator_py/interbotix_perception_msgs/srv/_filter_params_s.c.o[0m
+[8.277s] [ 83%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_py.dir/rosidl_generator_py/interbotix_perception_msgs/msg/_cluster_info_s.c.o[0m
+[8.287s] [ 85%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_py.dir/rosidl_generator_py/interbotix_perception_msgs/srv/_snap_picture_s.c.o[0m
+[8.298s] [ 87%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_py.dir/rosidl_generator_py/interbotix_perception_msgs/srv/_cluster_info_array_s.c.o[0m
+[8.450s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/interbotix_perception_msgs/libinterbotix_perception_msgs__rosidl_generator_py.so[0m
+[8.505s] [ 89%] Built target interbotix_perception_msgs__rosidl_generator_py
+[8.533s] [ 90%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interbotix_perception_msgs/_interbotix_perception_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.539s] [ 92%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interbotix_perception_msgs/_interbotix_perception_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[8.541s] [ 94%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interbotix_perception_msgs/_interbotix_perception_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.694s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.697s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.706s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.739s] [100%] Built target interbotix_perception_msgs__rosidl_typesupport_c__pyext
+[8.762s] [100%] Built target interbotix_perception_msgs__rosidl_typesupport_introspection_c__pyext
+[8.762s] [100%] Built target interbotix_perception_msgs__rosidl_typesupport_fastrtps_c__pyext
+[8.778s] Invoked command in '/home/evas/Robopoint_Humble/build/interbotix_perception_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --build /home/evas/Robopoint_Humble/build/interbotix_perception_msgs -- -j16 -l16
+[8.780s] Invoking command in '/home/evas/Robopoint_Humble/build/interbotix_perception_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --install /home/evas/Robopoint_Humble/build/interbotix_perception_msgs
+[8.792s] -- Install configuration: ""
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/ament_index/resource_index/rosidl_interfaces/interbotix_perception_msgs
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/filter_params.h
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__functions.h
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__type_support.h
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__functions.c
+[8.793s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__functions.c
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__functions.h
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__functions.h
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__type_support.h
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__struct.h
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__struct.h
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__struct.h
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__type_support.h
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__functions.c
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/cluster_info_array.h
+[8.794s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/snap_picture.h
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/cluster_info.h
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__functions.c
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__functions.h
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__struct.h
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__type_support.h
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/environment/library_path.sh
+[8.795s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/environment/library_path.dsv
+[8.796s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_generator_c.so
+[8.797s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_generator_c.so" to ""
+[8.797s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs
+[8.797s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv
+[8.797s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail
+[8.797s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__rosidl_typesupport_fastrtps_c.h
+[8.797s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__rosidl_typesupport_fastrtps_c.h
+[8.797s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__rosidl_typesupport_fastrtps_c.h
+[8.798s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg
+[8.798s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.798s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail
+[8.798s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__rosidl_typesupport_fastrtps_c.h
+[8.799s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_fastrtps_c.so
+[8.799s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[8.799s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs
+[8.799s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv
+[8.799s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail
+[8.800s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__type_support.c
+[8.800s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__type_support.c
+[8.800s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__rosidl_typesupport_introspection_c.h
+[8.800s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__type_support.c
+[8.800s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__rosidl_typesupport_introspection_c.h
+[8.800s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__rosidl_typesupport_introspection_c.h
+[8.800s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg
+[8.800s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.800s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail
+[8.801s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__type_support.c
+[8.801s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__rosidl_typesupport_introspection_c.h
+[8.801s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_introspection_c.so
+[8.801s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_introspection_c.so" to ""
+[8.801s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_c.so
+[8.802s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_c.so" to ""
+[8.802s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs
+[8.802s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv
+[8.802s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/cluster_info_array.hpp
+[8.802s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/filter_params.hpp
+[8.802s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail
+[8.802s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__builder.hpp
+[8.802s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__struct.hpp
+[8.802s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__traits.hpp
+[8.802s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__traits.hpp
+[8.802s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__struct.hpp
+[8.802s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__type_support.hpp
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__builder.hpp
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__traits.hpp
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__builder.hpp
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__type_support.hpp
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__type_support.hpp
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__struct.hpp
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/snap_picture.hpp
+[8.803s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/cluster_info.hpp
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.803s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail
+[8.803s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__struct.hpp
+[8.805s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__type_support.hpp
+[8.805s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__builder.hpp
+[8.805s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__traits.hpp
+[8.805s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs
+[8.805s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv
+[8.805s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail
+[8.805s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__rosidl_typesupport_fastrtps_cpp.hpp
+[8.805s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.805s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/dds_fastrtps
+[8.805s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__rosidl_typesupport_fastrtps_cpp.hpp
+[8.805s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg
+[8.805s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.805s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__rosidl_typesupport_fastrtps_cpp.hpp
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/dds_fastrtps
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.806s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.806s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs
+[8.806s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv
+[8.806s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__type_support.cpp
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/filter_params__rosidl_typesupport_introspection_cpp.hpp
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__rosidl_typesupport_introspection_cpp.hpp
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__type_support.cpp
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/cluster_info_array__type_support.cpp
+[8.806s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/srv/detail/snap_picture__rosidl_typesupport_introspection_cpp.hpp
+[8.807s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg
+[8.807s] -- Up-to-date: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail
+[8.807s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__rosidl_typesupport_introspection_cpp.hpp
+[8.807s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/include/interbotix_perception_msgs/interbotix_perception_msgs/msg/detail/cluster_info__type_support.cpp
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_introspection_cpp.so
+[8.810s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_cpp.so
+[8.810s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_typesupport_cpp.so" to ""
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/environment/pythonpath.sh
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/environment/pythonpath.dsv
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs-0.0.0-py3.10.egg-info
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.810s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/_interbotix_perception_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_snap_picture.py
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_cluster_info_array.py
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_filter_params.py
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_filter_params_s.c
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_snap_picture_s.c
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_cluster_info_array_s.c
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/__init__.py
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/_interbotix_perception_msgs_s.ep.rosidl_typesupport_c.c
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/msg
+[8.811s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/msg/_cluster_info_s.c
+[8.812s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/msg/_cluster_info.py
+[8.812s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/msg/__init__.py
+[8.812s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.812s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/libinterbotix_perception_msgs__rosidl_generator_py.so
+[8.812s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/_interbotix_perception_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.812s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/__init__.py
+[8.873s] Listing '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs'...
+[8.873s] Compiling '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/__init__.py'...
+[8.873s] Listing '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/msg'...
+[8.873s] Compiling '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/msg/__init__.py'...
+[8.873s] Compiling '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/msg/_cluster_info.py'...
+[8.873s] Listing '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv'...
+[8.873s] Compiling '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/__init__.py'...
+[8.873s] Compiling '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_cluster_info_array.py'...
+[8.873s] Compiling '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_filter_params.py'...
+[8.873s] Compiling '/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/srv/_snap_picture.py'...
+[8.878s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.878s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.879s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.879s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.879s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.879s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/local/lib/python3.10/dist-packages/interbotix_perception_msgs/interbotix_perception_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.880s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_generator_py.so
+[8.880s] -- Set runtime path of "/home/evas/Robopoint_Humble/install/interbotix_perception_msgs/lib/libinterbotix_perception_msgs__rosidl_generator_py.so" to ""
+[8.880s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/msg/ClusterInfo.idl
+[8.881s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/ClusterInfoArray.idl
+[8.881s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/FilterParams.idl
+[8.881s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/SnapPicture.idl
+[8.881s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/msg/ClusterInfo.msg
+[8.881s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/ClusterInfoArray.srv
+[8.881s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/ClusterInfoArray_Request.msg
+[8.882s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/ClusterInfoArray_Response.msg
+[8.882s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/FilterParams.srv
+[8.882s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/FilterParams_Request.msg
+[8.885s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/FilterParams_Response.msg
+[8.885s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/SnapPicture.srv
+[8.885s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/SnapPicture_Request.msg
+[8.885s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/srv/SnapPicture_Response.msg
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/ament_index/resource_index/package_run_dependencies/interbotix_perception_msgs
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/ament_index/resource_index/parent_prefix_path/interbotix_perception_msgs
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/environment/ament_prefix_path.sh
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/environment/ament_prefix_path.dsv
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/environment/path.sh
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/environment/path.dsv
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/local_setup.bash
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/local_setup.sh
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/local_setup.zsh
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/local_setup.dsv
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/package.dsv
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/ament_index/resource_index/packages/interbotix_perception_msgs
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_generator_cExport.cmake
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.886s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgs__rosidl_typesupport_cExport.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_generator_cppExport.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.887s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgs__rosidl_typesupport_cppExport.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_generator_pyExport.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/export_interbotix_perception_msgs__rosidl_generator_pyExport-noconfig.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/rosidl_cmake-extras.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgsConfig.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/cmake/interbotix_perception_msgsConfig-version.cmake
+[8.888s] -- Installing: /home/evas/Robopoint_Humble/install/interbotix_perception_msgs/share/interbotix_perception_msgs/package.xml
+[8.892s] Invoked command in '/home/evas/Robopoint_Humble/build/interbotix_perception_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --install /home/evas/Robopoint_Humble/build/interbotix_perception_msgs

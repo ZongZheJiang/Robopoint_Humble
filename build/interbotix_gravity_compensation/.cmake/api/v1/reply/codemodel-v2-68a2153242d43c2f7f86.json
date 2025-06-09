@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f4d21b9caf8f281e4755.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "interbotix_gravity_compensation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "interbotix_gravity_compensation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-interbotix_gravity_compensation-3af2dd540e32139350e5.json",
+					"name" : "interbotix_gravity_compensation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "interbotix_gravity_compensation_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-interbotix_gravity_compensation_uninstall-9d9592e650b453e8f790.json",
+					"name" : "interbotix_gravity_compensation_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7ec24f3d39f5f00257cf.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/evas/Robopoint_Humble/build/interbotix_gravity_compensation",
+		"source" : "/home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_gravity_compensation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
