@@ -10,6 +10,7 @@ from interbotix_xs_modules.xs_robot.arm import InterbotixManipulatorXS
 from interbotix_xs_msgs.msg import JointGroupCommand
 from sensor_msgs.msg import JointState
 import math
+import time
 
 """interbotix_ros_toolboxes.interbotix_xs_toolbox.interbotix_xs_modules.i
 We will need to set up a camera frame (camera_link) manually while testing to provide a reference of where the physical camera is
@@ -43,7 +44,7 @@ class MoveArmNode(Node):
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
-        self.joint_velocities = [None] * 4
+        self.joint_positions = None
 
         # Create a client for the get_3d_coordinates service
         self.get_3d_coordinates_client = self.create_client(
@@ -82,7 +83,6 @@ class MoveArmNode(Node):
             10
         )
 
-    
     def move_to_point_callback(self, request, response):
         """
         1) Uses request.x and request.y (normalized coords) to call 'get_3d_coordinates'.
@@ -94,6 +94,10 @@ class MoveArmNode(Node):
             self.get_logger().error("Service [get_3d_coordinates] not available.")
             response.success = False
             return response
+
+        while self.joint_positions is None:
+            self.get_logger().warn("Waiting for initial joint states...")
+        self.get_logger().info(f"Joint Positions: {self.joint_positions}")
 
         # 1) Call get_3d_coordinates to retrieve 3D point in camera frame
         self.get_logger().info(f"Received move_to_point request at normalized coords: ({request.x}, {request.y})")
@@ -149,12 +153,11 @@ class MoveArmNode(Node):
             # Additional orientation, pitch, or roll can be specified if needed
             # self.bot.arm.set_ee_pose_components(x=bx, y=by, z=bz)
             # self.get_logger().info("Move command sent to robot arm.")
-            jointState_msg = JointState()
-            self.joint_state_callback(jointState_msg)
+            self.get_logger().info(f"Joint Positions: {self.joint_positions}")
             msg = JointGroupCommand()
             msg.name = 'arm'
-            self.joint_velocities[0] = math.atan(bx/by)
-            msg.cmd = self.joint_velocities
+            self.joint_positions[0] = math.atan(bx/by)
+            msg.cmd = self.joint_positions
             self.move_arm_publisher.publish(msg)
             self.get_logger().info("DID NOT ACTUALLY MOVE ARM - TESTING")
             response.success = True
@@ -170,9 +173,16 @@ class MoveArmNode(Node):
         # msg.position  (a list of joint positions)
         # msg.velocity  (a list of joint velocities)
         # msg.effort    (a list of joint efforts)
+        self.joint_positions = list(msg.position)
+        # self.get_logger().info(f"Returning {msg.position}")
+        # self.get_logger().info(f"self.joint_positions: {self.joint_positions}")
+        # joint_data = dict(zip(msg.name, msg.position))
 
-        # self.get_logger().info(f"Returning {msg.velocity}")
-        self.joint_velocities = msg.velocity
+        # # Log the information
+        # self.get_logger().info("Received Joint States:")
+        # for name, position in joint_data.items():
+        #     self.get_logger().info(f"  - {name}: {position:.4f} radians")
+        # self.get_logger().info("--------------------")
 
 
 
