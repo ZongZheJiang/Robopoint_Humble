@@ -7,7 +7,8 @@ import tf2_ros
 import tf2_geometry_msgs
 from geometry_msgs.msg import PointStamped
 from interbotix_xs_modules.xs_robot.arm import InterbotixManipulatorXS
-from std_msgs.msg import Float32MultiArray
+from interbotix_xs_msgs.msg import JointGroupCommand
+from sensor_msgs.msg import JointState
 import math
 
 """interbotix_ros_toolboxes.interbotix_xs_toolbox.interbotix_xs_modules.i
@@ -16,8 +17,8 @@ located in the robot's base frame (px100/base_link).
 
 First run the rviz (not in tmux) with
 ros2 launch interbotix_xsarm_descriptions xsarm_description.launch.py robot_model:=px100 use_joint_pub_gui:=true
-
-Then run the following command to set up the camera frame (camera_link) in the robot's base frame (px100/base_link):
+/px100/commands/joint_group
+Then run the following command to set up the camera frame (camera_link) in the robot's base frame (px100/base_link):/px100/commands/joint_group
 
 ros2 run tf2_ros static_transform_publisher fwd_offset left_offset height_offset 0 0 0 px100/base_link camera_link
 ^ e.g. ros2 run tf2_ros static_transform_publisher 0.0 0.15 0.1 0 0 0 px100/base_link camera_link
@@ -42,6 +43,8 @@ class MoveArmNode(Node):
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
+        self.joint_velocities = [None] * 4
+
         # Create a client for the get_3d_coordinates service
         self.get_3d_coordinates_client = self.create_client(
             Get3DCoordinates,
@@ -51,13 +54,6 @@ class MoveArmNode(Node):
 
         while not self.get_3d_coordinates_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info("service not available, waiting again... ")
-
-        self.desired_joint_states_subscription = self.create_subscription(
-            Float32MultiArray,
-            'desired_joint_states',
-            self.listener_callback,
-            10
-        )
 
         # Create and start service server for "move_to_point"
         # this is service name, different from node name
@@ -72,11 +68,19 @@ class MoveArmNode(Node):
         self.bot = InterbotixManipulatorXS("px100", "arm", "gripper")
 
         self.get_logger().info("MoveArmNode is up and running.")
-    
 
-    def listener_callback(self, msg):
-        pass
-        # TODO: process the received information to be sent to /px100/joint_states 
+        self.joint_state_subscriber = self.create_subscription(
+            JointState,
+            '/px100/joint_states',
+            self.joint_state_callback,
+            10
+        )
+
+        self.move_arm_publisher = self.create_publisher(
+            JointGroupCommand,
+            '/px100/commands/joint_group',
+            10
+        )
 
     
     def move_to_point_callback(self, request, response):
@@ -136,20 +140,40 @@ class MoveArmNode(Node):
 
         self.get_logger().info(f"Transformed 3D point in base_link frame: ({bx:.3f}, {by:.3f}, {bz:.3f})")
 
+
+
         # 3) Command the Interbotix arm to move to {bx, by, bz}
+    
         try:
             # Example: Move using set_ee_pose_components
             # Additional orientation, pitch, or roll can be specified if needed
             # self.bot.arm.set_ee_pose_components(x=bx, y=by, z=bz)
             # self.get_logger().info("Move command sent to robot arm.")
-            pass
-            print("DID NOT ACTUALLY MOVE ARM - TESTING")
+            jointState_msg = JointState()
+            self.joint_state_callback(jointState_msg)
+            msg = JointGroupCommand()
+            msg.name = 'arm'
+            self.joint_velocities[0] = math.atan(bx/by)
+            msg.cmd = self.joint_velocities
+            self.move_arm_publisher.publish(msg)
+            self.get_logger().info("DID NOT ACTUALLY MOVE ARM - TESTING")
             response.success = True
         except Exception as e:
             self.get_logger().error(f"Arm motion failed: {e}")
             response.success = False
 
         return response    
+
+    def joint_state_callback(self, msg):
+        # msg.header
+        # msg.name      (a list of joint names)
+        # msg.position  (a list of joint positions)
+        # msg.velocity  (a list of joint velocities)
+        # msg.effort    (a list of joint efforts)
+
+        # self.get_logger().info(f"Returning {msg.velocity}")
+        self.joint_velocities = msg.velocity
+
 
 
 def main(args=None):
