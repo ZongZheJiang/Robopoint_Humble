@@ -1,0 +1,13 @@
+# pack-refs with: peeled fully-peeled sorted 
+e110c1a720f3cf5e1c450b317658e767933c47a4 refs/remotes/origin/add_humble_workflow
+34817f214bf3ea8d422e156065bf9622b350f52f refs/remotes/origin/ci_rolling_noble
+5168ab52143c33fce31d906a12468157f8f9bad3 refs/remotes/origin/galactic
+28bd7aa4d057ff6354ffd69f2cbae0defeb6128d refs/remotes/origin/humble
+3d510be10f089ad004d1a301388c07f572eb27ca refs/remotes/origin/iron
+1c62d1b7b3cd6fa2bf481a806f9da9bb2df6e16c refs/remotes/origin/jazzy
+af96d28bcdf23fccd94a922bd23fb74f8156d914 refs/remotes/origin/main
+ed37d8217f5be0481c93a755e0b1435ef10512b3 refs/remotes/origin/melodic
+af96d28bcdf23fccd94a922bd23fb74f8156d914 refs/remotes/origin/noetic
+1c62d1b7b3cd6fa2bf481a806f9da9bb2df6e16c refs/remotes/origin/rolling
+2b76e0f2af659a848160b0acbc142147e9071520 refs/remotes/origin/xs-modules-fix-mobile-base
+0b59aac6d1a5c135624fa66185052658592b804e refs/remotes/origin/xsarm_descriptions_changes

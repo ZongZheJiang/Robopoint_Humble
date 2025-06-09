@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/Interbotix/interbotix_ros_core.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "humble"]
+	remote = origin
+	merge = refs/heads/humble
+	vscode-merge-base = origin/main
+[submodule "interbotix_ros_xseries/dynamixel_workbench_toolbox"]
+	active = true
+	url = https://github.com/Interbotix/dynamixel-workbench.git
+[submodule "interbotix_ros_xseries/interbotix_xs_driver"]
+	active = true
+	url = https://github.com/Interbotix/interbotix_xs_driver.git

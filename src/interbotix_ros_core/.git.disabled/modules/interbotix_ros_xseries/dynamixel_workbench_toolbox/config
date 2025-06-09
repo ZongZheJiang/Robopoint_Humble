@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../interbotix_ros_xseries/dynamixel_workbench_toolbox
+[remote "origin"]
+	url = https://github.com/Interbotix/dynamixel-workbench.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

@@ -1,0 +1,14 @@
+# pack-refs with: peeled fully-peeled sorted 
+6e3dfa03ad126892ffd896e3bb47623970f81bf2 refs/remotes/origin/ci_fix_rolling
+6b034deed8299ca794f5af0cbe530f0dc5515320 refs/remotes/origin/ci_rolling_noble
+41746ab1ae56e7b4f99dbc3d9c73aeaadc3ab0b2 refs/remotes/origin/descriptions_arm_macros
+6ec25254a9006ad1d62f3a61d1368ea5f3584945 refs/remotes/origin/devel
+a035a798f76c8ed21653b1f339a7de24d5e7821d refs/remotes/origin/galactic
+b66d5b905725351dd71d3251a06cd3f4c777940f refs/remotes/origin/humble
+01c557d65f781697c3a05bffebafbd3404e03eab refs/remotes/origin/iron
+01c557d65f781697c3a05bffebafbd3404e03eab refs/remotes/origin/jazzy
+f26f5eb73d6bb6f0f6af873afa8c86258a70524c refs/remotes/origin/kinetic
+0bb2b0e6d0e619bff02cf74dbd5af5681dcf80c9 refs/remotes/origin/main
+120c32a0e557fb1e2142051787b47edeea57d99a refs/remotes/origin/melodic
+0bb2b0e6d0e619bff02cf74dbd5af5681dcf80c9 refs/remotes/origin/noetic
+01c557d65f781697c3a05bffebafbd3404e03eab refs/remotes/origin/rolling

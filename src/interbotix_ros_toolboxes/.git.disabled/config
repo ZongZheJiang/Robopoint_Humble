@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/Interbotix/interbotix_ros_toolboxes.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "humble"]
+	remote = origin
+	merge = refs/heads/humble
+	vscode-merge-base = origin/main
+[submodule "third_party_libraries/ModernRobotics"]
+	active = true
+	url = https://github.com/interbotix/ModernRobotics.git

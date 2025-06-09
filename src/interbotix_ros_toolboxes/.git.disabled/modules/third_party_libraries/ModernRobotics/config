@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../third_party_libraries/ModernRobotics
+[remote "origin"]
+	url = https://github.com/interbotix/ModernRobotics.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "matlab_only"]
+	remote = origin
+	merge = refs/heads/matlab_only
