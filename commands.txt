@@ -1,3 +1,3 @@
-ros2 service call /move_to_point  robopoint_interfaces/srv/MoveToPoint "{x: 0.5, y: 0.5, z: 0.2}"
+ros2 service call /move_to_point  robopoint_interfaces/srv/MoveToPoint "{x: 0.5, y: 0.5}"
 
 ros2 service call /get_3d_coordinates robopoint_interfaces/srv/Get3DCoordinates "{x: 0.5, y: 0.5}"

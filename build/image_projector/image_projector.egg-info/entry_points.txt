@@ -1,0 +1,4 @@
+[console_scripts]
+image_projector = image_projector.image_projector:main
+realsense_projector = image_projector.realsense_projector:main
+

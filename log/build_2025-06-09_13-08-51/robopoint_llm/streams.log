@@ -1,0 +1,145 @@
+[1.509s] Invoking command in '/home/evas/Robopoint_Humble/src/robopoint_llm': PYTHONPATH=/home/evas/Robopoint_Humble/build/robopoint_llm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robopoint_llm build --build-base /home/evas/Robopoint_Humble/build/robopoint_llm/build install --record /home/evas/Robopoint_Humble/build/robopoint_llm/install.log --single-version-externally-managed install_data
+[1.903s] running egg_info
+[1.908s] creating ../../build/robopoint_llm/robopoint_llm.egg-info
+[1.908s] writing ../../build/robopoint_llm/robopoint_llm.egg-info/PKG-INFO
+[1.908s] writing dependency_links to ../../build/robopoint_llm/robopoint_llm.egg-info/dependency_links.txt
+[1.908s] writing entry points to ../../build/robopoint_llm/robopoint_llm.egg-info/entry_points.txt
+[1.908s] writing requirements to ../../build/robopoint_llm/robopoint_llm.egg-info/requires.txt
+[1.908s] writing top-level names to ../../build/robopoint_llm/robopoint_llm.egg-info/top_level.txt
+[1.908s] writing manifest file '../../build/robopoint_llm/robopoint_llm.egg-info/SOURCES.txt'
+[1.911s] reading manifest file '../../build/robopoint_llm/robopoint_llm.egg-info/SOURCES.txt'
+[1.912s] writing manifest file '../../build/robopoint_llm/robopoint_llm.egg-info/SOURCES.txt'
+[1.913s] running build
+[1.913s] running build_py
+[1.913s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build
+[1.914s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib
+[1.914s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.914s] copying robopoint/utils.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.915s] copying robopoint/constants.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.915s] copying robopoint/conversation.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.916s] copying robopoint/test_llm_service.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.917s] copying robopoint/run_llm_service.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.918s] copying robopoint/run_llm.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.918s] copying robopoint/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.919s] copying robopoint/mm_utils.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+[1.919s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint_llm
+[1.919s] copying robopoint_llm/query.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint_llm
+[1.920s] copying robopoint_llm/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint_llm
+[1.920s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+[1.922s] copying robopoint/model/utils.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+[1.922s] copying robopoint/model/llava_arch.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+[1.922s] copying robopoint/model/apply_delta.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+[1.922s] copying robopoint/model/builder.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+[1.922s] copying robopoint/model/consolidate.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+[1.922s] copying robopoint/model/make_delta.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+[1.923s] copying robopoint/model/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+[1.923s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] copying robopoint/serve/gradio_web_server.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] copying robopoint/serve/register_worker.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] copying robopoint/serve/sglang_worker.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] copying robopoint/serve/model_worker.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] copying robopoint/serve/cli.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] copying robopoint/serve/controller.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] copying robopoint/serve/test_message.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] copying robopoint/serve/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+[1.923s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+[1.924s] copying robopoint/model/language_model/llava_mistral.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+[1.924s] copying robopoint/model/language_model/llava_llama.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+[1.924s] copying robopoint/model/language_model/llava_mpt.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+[1.924s] copying robopoint/model/language_model/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+[1.924s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_projector
+[1.924s] copying robopoint/model/multimodal_projector/builder.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_projector
+[1.924s] copying robopoint/model/multimodal_projector/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_projector
+[1.924s] creating /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder
+[1.924s] copying robopoint/model/multimodal_encoder/builder.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder
+[1.924s] copying robopoint/model/multimodal_encoder/clip_encoder.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder
+[1.926s] copying robopoint/model/multimodal_encoder/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder
+[1.927s] running install
+[1.927s] running install_lib
+[1.929s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.929s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model
+[1.930s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/utils.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model
+[1.930s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model
+[1.930s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model/llava_mistral.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model
+[1.930s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model/llava_llama.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model
+[1.931s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model/llava_mpt.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model
+[1.931s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model/__init__.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model
+[1.931s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_projector
+[1.931s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_projector/builder.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_projector
+[1.932s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_projector/__init__.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_projector
+[1.932s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_encoder
+[1.932s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder/builder.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_encoder
+[1.932s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder/clip_encoder.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_encoder
+[1.933s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder/__init__.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_encoder
+[1.933s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/llava_arch.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model
+[1.933s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/apply_delta.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model
+[1.933s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/builder.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model
+[1.948s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/consolidate.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model
+[1.948s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/make_delta.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model
+[1.948s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/__init__.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model
+[1.948s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/utils.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/constants.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/conversation.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/test_llm_service.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/run_llm_service.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.949s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve/gradio_web_server.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve/register_worker.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve/sglang_worker.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve/model_worker.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve/cli.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve/controller.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve/test_message.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve/__init__.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve
+[1.949s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/run_llm.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.950s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/__init__.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.950s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/mm_utils.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+[1.950s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm
+[1.950s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint_llm/query.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm
+[1.950s] copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint_llm/__init__.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm
+[1.950s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/utils.py to utils.cpython-310.pyc
+[1.950s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model/llava_mistral.py to llava_mistral.cpython-310.pyc
+[1.950s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model/llava_llama.py to llava_llama.cpython-310.pyc
+[1.950s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model/llava_mpt.py to llava_mpt.cpython-310.pyc
+[1.950s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/language_model/__init__.py to __init__.cpython-310.pyc
+[1.950s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_projector/builder.py to builder.cpython-310.pyc
+[1.950s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_projector/__init__.py to __init__.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_encoder/builder.py to builder.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_encoder/clip_encoder.py to clip_encoder.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/multimodal_encoder/__init__.py to __init__.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/llava_arch.py to llava_arch.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/apply_delta.py to apply_delta.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/builder.py to builder.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/consolidate.py to consolidate.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/make_delta.py to make_delta.cpython-310.pyc
+[1.951s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/__init__.py to __init__.cpython-310.pyc
+[1.959s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/utils.py to utils.cpython-310.pyc
+[1.959s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/constants.py to constants.cpython-310.pyc
+[1.959s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/conversation.py to conversation.cpython-310.pyc
+[1.959s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/test_llm_service.py to test_llm_service.cpython-310.pyc
+[1.959s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/run_llm_service.py to run_llm_service.cpython-310.pyc
+[1.959s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve/gradio_web_server.py to gradio_web_server.cpython-310.pyc
+[1.964s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve/register_worker.py to register_worker.cpython-310.pyc
+[1.964s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve/sglang_worker.py to sglang_worker.cpython-310.pyc
+[1.966s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve/model_worker.py to model_worker.cpython-310.pyc
+[1.968s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve/cli.py to cli.cpython-310.pyc
+[1.970s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve/controller.py to controller.cpython-310.pyc
+[1.973s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve/test_message.py to test_message.cpython-310.pyc
+[1.973s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/serve/__init__.py to __init__.cpython-310.pyc
+[1.973s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/run_llm.py to run_llm.cpython-310.pyc
+[1.975s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/__init__.py to __init__.cpython-310.pyc
+[1.975s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/mm_utils.py to mm_utils.cpython-310.pyc
+[1.978s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm/query.py to query.cpython-310.pyc
+[1.978s] byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm/__init__.py to __init__.cpython-310.pyc
+[1.979s] running install_data
+[1.979s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/share/ament_index
+[1.979s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/share/ament_index/resource_index
+[1.979s] creating /home/evas/Robopoint_Humble/install/robopoint_llm/share/ament_index/resource_index/packages
+[1.979s] copying resource/robopoint_llm -> /home/evas/Robopoint_Humble/install/robopoint_llm/share/ament_index/resource_index/packages
+[1.979s] copying package.xml -> /home/evas/Robopoint_Humble/install/robopoint_llm/share/robopoint_llm
+[1.979s] running install_egg_info
+[1.982s] Copying ../../build/robopoint_llm/robopoint_llm.egg-info to /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm-0.0.0-py3.10.egg-info
+[1.983s] running install_scripts
+[2.015s] Installing query script to /home/evas/Robopoint_Humble/install/robopoint_llm/lib/robopoint_llm
+[2.017s] writing list of installed files to '/home/evas/Robopoint_Humble/build/robopoint_llm/install.log'
+[2.054s] Invoked command in '/home/evas/Robopoint_Humble/src/robopoint_llm' returned '0': PYTHONPATH=/home/evas/Robopoint_Humble/build/robopoint_llm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robopoint_llm build --build-base /home/evas/Robopoint_Humble/build/robopoint_llm/build install --record /home/evas/Robopoint_Humble/build/robopoint_llm/install.log --single-version-externally-managed install_data

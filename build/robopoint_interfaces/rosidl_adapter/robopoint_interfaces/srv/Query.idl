@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robopoint_interfaces/srv/Query.srv
+// generated code does not contain a copyright notice
+
+
+module robopoint_interfaces {
+  module srv {
+    struct Query_Request {
+      string query;
+    };
+    struct Query_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};
