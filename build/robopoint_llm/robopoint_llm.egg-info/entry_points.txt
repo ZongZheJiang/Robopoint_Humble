@@ -1,3 +1,0 @@
-[console_scripts]
-query = robopoint_llm.query:main
-

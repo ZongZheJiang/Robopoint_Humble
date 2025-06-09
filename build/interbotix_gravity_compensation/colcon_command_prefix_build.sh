@@ -1,2 +1,0 @@
-# generated from colcon_core/shell/template/command_prefix.sh.em
-. "/home/evas/Robopoint_Humble/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.sh"
