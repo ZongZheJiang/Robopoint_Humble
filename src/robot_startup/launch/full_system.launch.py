@@ -89,7 +89,7 @@ def generate_launch_description():
         package='robopoint_llm',
         executable='query',
         output='screen',
-        arguments=['--filepath', "/home/evas/interbotix_ws/debug.jpg"]
+        arguments=['--filepath', "/home/evas/Robopoint_Humble/debug.jpg"]
     )
 
     ld = LaunchDescription()
