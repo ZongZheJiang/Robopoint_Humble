@@ -93,9 +93,11 @@ class QueryService(Node):
             self.get_logger().info(f"Move to Point Response: {future}")
         except Exception as e:
             print(f"Error: {e}")
+            response.seccess = False
 
+        response.success = True
         # by right, future returns no result, since the action is that the robot moves.
-        return future
+        return response
 
 
 def main(args=None):

@@ -2,4 +2,4 @@ ros2 service call /move_to_point  robopoint_interfaces/srv/MoveToPoint "{x: 0.5,
 
 ros2 service call /get_3d_coordinates robopoint_interfaces/srv/Get3DCoordinates "{x: 0.5, y: 0.5}"
 
-ros2 service call /query_service robopoint_interfaces/srv/Query 'query: "return (x: 0.5, y: 0.5)"'
+ros2 service call /query_service robopoint_interfaces/srv/Query 'query: "Pick up the water bottle."'
