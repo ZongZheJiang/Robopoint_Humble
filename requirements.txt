@@ -371,7 +371,8 @@ tokenizers==0.19.1
 toml==0.10.2
 topic-monitor==0.20.5
 torch==2.7.0
-torchvision==0.16.2
+torchaudio==2.7.0
+torchvision==0.22.0
 tqdm==4.67.1
 trajectory-msgs==4.8.0
 transformers==4.43.1
