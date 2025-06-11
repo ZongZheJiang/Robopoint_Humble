@@ -1,0 +1,9 @@
+[query-8] RuntimeError: No GPU found. A GPU is needed for quantization.
+
+CUDA is not available. To fix issue, reboot the PC. 
+
+
+TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'
+
+This issue occurs when module "setuptools" > 70.x. To fix issue, run the following:
+`pip install setuptools==70.0`
