@@ -3,3 +3,6 @@ ros2 service call /move_to_point  robopoint_interfaces/srv/MoveToPoint "{x: 0.5,
 ros2 service call /get_3d_coordinates robopoint_interfaces/srv/Get3DCoordinates "{x: 0.5, y: 0.5}"
 
 ros2 service call /query_service robopoint_interfaces/srv/Query 'query: "Pick up the water bottle."'
+
+# Check Torch and CUDA version
+python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA version PyTorch was built with: {torch.version.cuda}'); print(f'Is CUDA available to PyTorch: {torch.cuda.is_available()}')"
