@@ -5,4 +5,4 @@ ros2 service call /get_3d_coordinates robopoint_interfaces/srv/Get3DCoordinates 
 ros2 service call /query_service robopoint_interfaces/srv/Query 'query: "Pick up the water bottle."'
 
 # Check Torch and CUDA version
-python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA version PyTorch was built with: {torch.version.cuda}'); print(f'Is CUDA available to PyTorch: {torch.cuda.is_available()}')"
+python3 -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA version PyTorch was built with: {torch.version.cuda}'); print(f'Is CUDA available to PyTorch: {torch.cuda.is_available()}')"
