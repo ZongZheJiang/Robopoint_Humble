@@ -3,7 +3,7 @@ from PIL import Image
 from run_llm_service import llm_service
 
 
-image_path = "pic.jpg"
+image_path = "./pic.jpg"
 image = Image.open(image_path)
 prompt = "Point a location on the table beside the cactus."
 while True:

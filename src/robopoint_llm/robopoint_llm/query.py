@@ -7,7 +7,8 @@ from realsense2_camera_msgs.msg import RGBD
 from cv_bridge import CvBridge
 from torch import rsub
 from transformers.models import llama
-from robopoint.run_llm_service import llm_service
+# from robopoint.run_llm_service import llm_service
+from robopoint.run_nvila_service import llm_service
 from rclpy.utilities import remove_ros_args
 
 # deps to convert cv2 to PIL

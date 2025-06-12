@@ -26,7 +26,7 @@ model_path = "johnwee1/robopoint-v1-llama-2-7b"
 
 disable_torch_init()
 # Function to load the model
-tokenizer, model, image_processor, context_len = load_pretrained_model(model_path, model_base, model_name)
+tokenizer, model, image_processor, context_len = load_pretrained_model(model_path, model_base, model_name, use_flash_attn=True)
 
 @torch.inference_mode()
 def generate(tokenizer, model, image_processor, prompt, images=None, temperature=1.0, top_p=1.0, max_new_tokens=256):

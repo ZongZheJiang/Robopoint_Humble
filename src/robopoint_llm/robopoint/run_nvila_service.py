@@ -7,6 +7,7 @@ from robopoint.mm_utils import process_images, load_image_from_base64, tokenizer
 from robopoint.constants import DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IMAGE_TOKEN_INDEX
 from robopoint.model.builder import load_pretrained_model
 from robopoint.utils import disable_torch_init
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
 
 # model is REALLY sensitive to the prompt format, so we need to make sure the prompt is in the correct format
@@ -21,25 +22,37 @@ post = " Your answer should be formatted as a list of tuples, " \
         " The coordinates should be between 0 and 1, indicating the " \
         "normalized pixel locations of the points in the image. [/INST]"
 
-
-# model_name = "llava-llama-2-7b-lora"
-# model_base = "meta-llama/Llama-2-7b-chat-hf"
-# model_path = "wentao-yuan/robopoint-v1-llama-2-7b-lora"
-
-model_name = "llava-llama-2-7b"
+model_name = "NVILA-Lite-8B"
 model_base = None
-model_path = "johnwee1/robopoint-v1-llama-2-7b"
+model_path = "WallyLovesCats/NVILA-Lite-8B"
 
-# model_name = "NVILA-Lite-8B"
-# model_base = None
-# model_path = "WallyLovesCats/NVILA-Lite-8B"
-
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_compute_dtype=torch.bfloat16,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True,
+)
 
 
 class LLMService:
     def __init__(self):
         disable_torch_init()
-        self.tokenizer, self.model, self.image_processor, self.context_len = load_pretrained_model(model_path, model_base, model_name, load_4bit=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_path, subfolder = "llm")
+        self.model = AutoModelForCausalLM.from_pretrained(
+            model_path,
+            subfolder = "llm",
+            torch_dtype=torch.bfloat16,
+            device_map="auto",
+            quantization_config=quantization_config
+        )
+
+        vision_tower = self.model.get_vision_tower()
+        self.image_processor = vision_tower.image_processor
+
+        if hasattr(self.model.config, "max_sequence_length"):
+            self.context_len = self.model.config.max_sequence_length
+        else:
+            self.context_len = 8192
         print("context length:")
         print(self.context_len)
 
