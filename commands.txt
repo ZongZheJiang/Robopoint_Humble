@@ -4,5 +4,10 @@ ros2 service call /get_3d_coordinates robopoint_interfaces/srv/Get3DCoordinates 
 
 ros2 service call /query_service robopoint_interfaces/srv/Query 'query: "Pick up the water bottle."'
 
+# NVIDIA Driver version
+575.57.08
+
+Not sure why CUDA sometimes become unavailable, apparently the NVIDIA Driver Version is too advanced but I will downgrade the driver later to 566.36 heh
+
 # Check Torch and CUDA version
 python3 -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA version PyTorch was built with: {torch.version.cuda}'); print(f'Is CUDA available to PyTorch: {torch.cuda.is_available()}')"
