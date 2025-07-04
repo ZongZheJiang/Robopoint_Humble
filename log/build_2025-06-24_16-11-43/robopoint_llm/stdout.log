@@ -1,0 +1,58 @@
+running egg_info
+writing ../../build/robopoint_llm/robopoint_llm.egg-info/PKG-INFO
+writing dependency_links to ../../build/robopoint_llm/robopoint_llm.egg-info/dependency_links.txt
+writing entry points to ../../build/robopoint_llm/robopoint_llm.egg-info/entry_points.txt
+writing requirements to ../../build/robopoint_llm/robopoint_llm.egg-info/requires.txt
+writing top-level names to ../../build/robopoint_llm/robopoint_llm.egg-info/top_level.txt
+reading manifest file '../../build/robopoint_llm/robopoint_llm.egg-info/SOURCES.txt'
+writing manifest file '../../build/robopoint_llm/robopoint_llm.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robopoint/utils.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint/constants.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint/conversation.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint/test_llm_service.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint/run_llm_service.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint/run_nvila_service.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint/run_llm.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint/mm_utils.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint
+copying robopoint_llm/query.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint_llm
+copying robopoint_llm/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint_llm
+copying robopoint/model/utils.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+copying robopoint/model/llava_arch.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+copying robopoint/model/apply_delta.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+copying robopoint/model/builder.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+copying robopoint/model/consolidate.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+copying robopoint/model/make_delta.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+copying robopoint/model/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model
+copying robopoint/serve/gradio_web_server.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+copying robopoint/serve/register_worker.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+copying robopoint/serve/sglang_worker.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+copying robopoint/serve/model_worker.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+copying robopoint/serve/cli.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+copying robopoint/serve/controller.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+copying robopoint/serve/test_message.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+copying robopoint/serve/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/serve
+copying robopoint/model/language_model/llava_mistral.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+copying robopoint/model/language_model/llava_llama.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+copying robopoint/model/language_model/llava_mpt.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+copying robopoint/model/language_model/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/language_model
+copying robopoint/model/multimodal_projector/builder.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_projector
+copying robopoint/model/multimodal_projector/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_projector
+copying robopoint/model/multimodal_encoder/builder.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder
+copying robopoint/model/multimodal_encoder/clip_encoder.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder
+copying robopoint/model/multimodal_encoder/__init__.py -> /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/model/multimodal_encoder
+running install
+running install_lib
+copying /home/evas/Robopoint_Humble/build/robopoint_llm/build/lib/robopoint/run_llm_service.py -> /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint
+byte-compiling /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint/run_llm_service.py to run_llm_service.cpython-310.pyc
+running install_data
+copying resource/robopoint_llm -> /home/evas/Robopoint_Humble/install/robopoint_llm/share/ament_index/resource_index/packages
+copying package.xml -> /home/evas/Robopoint_Humble/install/robopoint_llm/share/robopoint_llm
+running install_egg_info
+removing '/home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/robopoint_llm/robopoint_llm.egg-info to /home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm-0.0.0-py3.10.egg-info
+running install_scripts
+Installing query script to /home/evas/Robopoint_Humble/install/robopoint_llm/lib/robopoint_llm
+writing list of installed files to '/home/evas/Robopoint_Humble/build/robopoint_llm/install.log'

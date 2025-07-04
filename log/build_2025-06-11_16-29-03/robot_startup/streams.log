@@ -1,0 +1,36 @@
+[3.020s] Invoking command in '/home/evas/Robopoint_Humble/src/robot_startup': PYTHONPATH=/home/evas/Robopoint_Humble/build/robot_startup/prefix_override:/home/evas/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/robot_startup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_startup build --build-base /home/evas/Robopoint_Humble/build/robot_startup/build install --record /home/evas/Robopoint_Humble/build/robot_startup/install.log --single-version-externally-managed install_data
+[3.394s] running egg_info
+[3.407s] writing ../../build/robot_startup/robot_startup.egg-info/PKG-INFO
+[3.408s] writing dependency_links to ../../build/robot_startup/robot_startup.egg-info/dependency_links.txt
+[3.408s] writing entry points to ../../build/robot_startup/robot_startup.egg-info/entry_points.txt
+[3.408s] writing requirements to ../../build/robot_startup/robot_startup.egg-info/requires.txt
+[3.409s] writing top-level names to ../../build/robot_startup/robot_startup.egg-info/top_level.txt
+[3.449s] reading manifest file '../../build/robot_startup/robot_startup.egg-info/SOURCES.txt'
+[3.450s] writing manifest file '../../build/robot_startup/robot_startup.egg-info/SOURCES.txt'
+[3.450s] running build
+[3.450s] running build_py
+[3.450s] creating /home/evas/Robopoint_Humble/build/robot_startup/build
+[3.450s] creating /home/evas/Robopoint_Humble/build/robot_startup/build/lib
+[3.450s] creating /home/evas/Robopoint_Humble/build/robot_startup/build/lib/robot_startup
+[3.451s] copying robot_startup/__init__.py -> /home/evas/Robopoint_Humble/build/robot_startup/build/lib/robot_startup
+[3.451s] running install
+[3.461s] running install_lib
+[3.482s] creating /home/evas/Robopoint_Humble/install/robot_startup/lib/python3.10/site-packages/robot_startup
+[3.482s] copying /home/evas/Robopoint_Humble/build/robot_startup/build/lib/robot_startup/__init__.py -> /home/evas/Robopoint_Humble/install/robot_startup/lib/python3.10/site-packages/robot_startup
+[3.483s] byte-compiling /home/evas/Robopoint_Humble/install/robot_startup/lib/python3.10/site-packages/robot_startup/__init__.py to __init__.cpython-310.pyc
+[3.483s] running install_data
+[3.483s] creating /home/evas/Robopoint_Humble/install/robot_startup/share/ament_index
+[3.483s] creating /home/evas/Robopoint_Humble/install/robot_startup/share/ament_index/resource_index
+[3.483s] creating /home/evas/Robopoint_Humble/install/robot_startup/share/ament_index/resource_index/packages
+[3.483s] copying resource/robot_startup -> /home/evas/Robopoint_Humble/install/robot_startup/share/ament_index/resource_index/packages
+[3.484s] copying package.xml -> /home/evas/Robopoint_Humble/install/robot_startup/share/robot_startup
+[3.484s] creating /home/evas/Robopoint_Humble/install/robot_startup/share/robot_startup/launch
+[3.484s] copying launch/full_system.launch.py -> /home/evas/Robopoint_Humble/install/robot_startup/share/robot_startup/launch
+[3.484s] creating /home/evas/Robopoint_Humble/install/robot_startup/share/robot_startup/rviz
+[3.484s] copying rviz/xsarm_description.rviz -> /home/evas/Robopoint_Humble/install/robot_startup/share/robot_startup/rviz
+[3.484s] running install_egg_info
+[3.507s] Copying ../../build/robot_startup/robot_startup.egg-info to /home/evas/Robopoint_Humble/install/robot_startup/lib/python3.10/site-packages/robot_startup-0.0.0-py3.10.egg-info
+[3.508s] running install_scripts
+[3.678s] Installing move_arm_node script to /home/evas/Robopoint_Humble/install/robot_startup/lib/robot_startup
+[3.679s] writing list of installed files to '/home/evas/Robopoint_Humble/build/robot_startup/install.log'
+[3.732s] Invoked command in '/home/evas/Robopoint_Humble/src/robot_startup' returned '0': PYTHONPATH=/home/evas/Robopoint_Humble/build/robot_startup/prefix_override:/home/evas/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/robot_startup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_startup build --build-base /home/evas/Robopoint_Humble/build/robot_startup/build install --record /home/evas/Robopoint_Humble/build/robot_startup/install.log --single-version-externally-managed install_data

@@ -1,0 +1,5 @@
+  File "/home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm/query.py", line 93
+    self.get_logger().info(f"Move to Point Response: {future}"
+                          ^
+SyntaxError: '(' was never closed
+

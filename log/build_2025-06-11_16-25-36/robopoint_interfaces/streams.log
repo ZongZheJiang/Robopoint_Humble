@@ -1,0 +1,69 @@
+[0.182s] Invoking command in '/home/evas/Robopoint_Humble/build/robopoint_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/robopoint_interfaces:/home/evas/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/evas/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/evas/interbotix_ws/install/interbotix_moveit_interface:/home/evas/interbotix_ws/install/moveit_visual_tools:/home/evas/interbotix_ws/install/interbotix_ros_xsarms:/home/evas/interbotix_ws/install/interbotix_xsarm_moveit:/home/evas/interbotix_ws/install/interbotix_xsarm_sim:/home/evas/interbotix_ws/install/interbotix_xsarm_ros_control:/home/evas/interbotix_ws/install/interbotix_xsarm_puppet:/home/evas/interbotix_ws/install/interbotix_xsarm_perception:/home/evas/interbotix_ws/install/interbotix_xsarm_joy:/home/evas/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/evas/interbotix_ws/install/interbotix_xsarm_dual:/home/evas/interbotix_ws/install/interbotix_xsarm_control:/home/evas/interbotix_ws/install/interbotix_xsarm_descriptions:/home/evas/interbotix_ws/install/interbotix_xs_toolbox:/home/evas/interbotix_ws/install/interbotix_xs_rviz:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_ros_xseries:/home/evas/interbotix_ws/install/interbotix_xs_sdk:/home/evas/interbotix_ws/install/interbotix_xs_ros_control:/home/evas/interbotix_ws/install/interbotix_perception_toolbox:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_toolbox:/home/evas/interbotix_ws/install/interbotix_gravity_compensation:/home/evas/interbotix_ws/install/interbotix_xs_msgs:/home/evas/interbotix_ws/install/interbotix_xs_driver:/home/evas/interbotix_ws/install/interbotix_tf_tools:/home/evas/interbotix_ws/install/interbotix_perception_pipelines:/home/evas/interbotix_ws/install/interbotix_perception_msgs:/home/evas/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/evas/interbotix_ws/install/interbotix_common_sim:/home/evas/interbotix_ws/install/interbotix_common_modules:/home/evas/interbotix_ws/install/dynamixel_workbench_toolbox:/opt/ros/humble /usr/bin/cmake --build /home/evas/Robopoint_Humble/build/robopoint_interfaces -- -j16 -l16
+[0.385s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.385s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.396s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.406s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.410s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.448s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.701s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.930s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.229s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.261s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.282s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.283s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.283s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.320s] -- Added test 'lint_cmake' to check CMake code style
+[1.321s] -- Added test 'xmllint' to check XML markup files
+[1.323s] -- Configuring done
+[1.345s] -- Generating done
+[1.355s] -- Build files have been written to: /home/evas/Robopoint_Humble/build/robopoint_interfaces
+[1.386s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.399s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.423s] [  4%] Built target ament_cmake_python_copy_robopoint_interfaces
+[1.652s] running egg_info
+[1.673s] creating robopoint_interfaces.egg-info
+[1.673s] writing robopoint_interfaces.egg-info/PKG-INFO
+[1.673s] writing dependency_links to robopoint_interfaces.egg-info/dependency_links.txt
+[1.674s] writing top-level names to robopoint_interfaces.egg-info/top_level.txt
+[1.674s] writing manifest file 'robopoint_interfaces.egg-info/SOURCES.txt'
+[1.728s] reading manifest file 'robopoint_interfaces.egg-info/SOURCES.txt'
+[1.750s] Traceback (most recent call last):
+[1.750s]   File "/home/evas/Robopoint_Humble/build/robopoint_interfaces/ament_cmake_python/robopoint_interfaces/setup.py", line 4, in <module>
+[1.750s]     setup(
+[1.750s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+[1.751s]     return distutils.core.setup(**attrs)
+[1.751s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+[1.751s]     return run_commands(dist)
+[1.751s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+[1.751s]     dist.run_commands()
+[1.751s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+[1.751s]     self.run_command(cmd)
+[1.751s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+[1.751s]     super().run_command(command)
+[1.751s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+[1.751s]     cmd_obj.run()
+[1.752s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 312, in run
+[1.752s]     self.find_sources()
+[1.752s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+[1.752s]     mm.run()
+[1.752s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 548, in run
+[1.752s]     self.prune_file_list()
+[1.752s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/sdist.py", line 162, in prune_file_list
+[1.752s]     super().prune_file_list()
+[1.752s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/command/sdist.py", line 386, in prune_file_list
+[1.752s]     base_dir = self.distribution.get_fullname()
+[1.752s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 275, in get_fullname
+[1.752s]     return _distribution_fullname(self.get_name(), self.get_version())
+[1.752s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 293, in _distribution_fullname
+[1.753s]     canonicalize_version(version, strip_trailing_zero=False),
+[1.753s] TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'
+[1.786s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg] Error 1
+[1.786s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg.dir/all] Error 2
+[1.786s] gmake[1]: *** Waiting for unfinished jobs....
+[1.939s] [  4%] Built target robopoint_interfaces__cpp
+[2.046s] [  6%] [32mBuilding C object CMakeFiles/robopoint_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robopoint_interfaces/srv/detail/query__functions.c.o[0m
+[2.046s] [  8%] [32mBuilding C object CMakeFiles/robopoint_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robopoint_interfaces/srv/detail/get3_d_coordinates__functions.c.o[0m
+[2.050s] [ 10%] [32mBuilding C object CMakeFiles/robopoint_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robopoint_interfaces/srv/detail/move_to_point__functions.c.o[0m
+[2.149s] [ 12%] [32m[1mLinking C shared library librobopoint_interfaces__rosidl_generator_c.so[0m
+[2.190s] [ 12%] Built target robopoint_interfaces__rosidl_generator_c
+[2.192s] gmake: *** [Makefile:146: all] Error 2

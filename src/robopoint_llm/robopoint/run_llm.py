@@ -16,13 +16,13 @@ from robopoint.utils import disable_torch_init
 # model_path = "wentao-yuan/robopoint-v1-llama-2-7b-lora"
 
 # you can also try this model, but its 13b.
-# model_name = "robopoint-v1-vicuna-v1.5-13b"
-# model_base= None
-# model_path = "wentao-yuan/robopoint-v1-vicuna-v1.5-13b"
+model_name = "robopoint-v1-vicuna-v1.5-13b"
+model_base= None
+model_path = "wentao-yuan/robopoint-v1-vicuna-v1.5-13b"
 
-model_name = "llava-llama-2-7b-johnwee1" # arbitrary name is ok
-model_base = None
-model_path = "johnwee1/robopoint-v1-llama-2-7b"
+# model_name = "llava-llama-2-7b-johnwee1" # arbitrary name is ok
+# model_base = None
+# model_path = "johnwee1/robopoint-v1-llama-2-7b"
 
 disable_torch_init()
 # Function to load the model

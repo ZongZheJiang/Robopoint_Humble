@@ -1,0 +1,53 @@
+[query-8] [INFO] [1749526389.217585627] [query_service_node]: Incoming query (prompt)
+[query-8] -----
+[query-8] return x: 0.5, y: 0.5
+[query-8] [INFO] [1749526428.411130138] [query_service_node]: Will call call_async with robopoint_interfaces.srv.MoveToPoint_Request(x=0.622, y=0.425)
+[move_arm-9] [INFO] [1749526428.412748769] [move_arm_node]: Joint Positions: [0.0, -1.88, 1.5, 0.8, 0.0, 0.019493588689617928, -0.019493588689617928]
+[move_arm-9] [INFO] [1749526428.413081903] [move_arm_node]: Received move_to_point request at normalized coords: (0.621999979019165, 0.42500001192092896)
+[query-8] context length:
+[query-8] 2048
+[query-8] LLMService initialized - ready to accept requests now
+[query-8] PRINT from main: Parsed custom args: filepath='/home/evas/interbotix_ws/debug.jpg'
+[query-8] Prompt: [INST] <<SYS>>
+[query-8] You are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.
+[query-8] <</SYS>>
+[query-8] 
+[query-8] <image>.
+[query-8] return x: 0.5, y: 0.5 Your answer should be formatted as a list of tuples, i.e. [(x1, y1), (x2, y2), ...], where each tuple contains the x and y coordinates of a point satisfying the conditions above. The coordinates should be between 0 and 1, indicating the normalized pixel locations of the points in the image. [/INST]
+[query-8] Found vectors: [[0.622, 0.425]]
+[query-8] Found 1 2D points and 0 bounding boxes
+[query-8] Annotated image saved to /home/evas/interbotix_ws/debug.jpg
+[image_projector-7] [INFO] [1749526428.427391424] [rgbd_subscriber]: Depth image:
+[image_projector-7] [[6705 6705 6705 ... 4782 4782 4709]
+[image_projector-7]  [6705 6705 6705 ... 4819 4819 4745]
+[image_projector-7]  [6779 6854 6779 ... 4896 4896 4819]
+[image_projector-7]  ...
+[image_projector-7]  [   0    0    0 ...  277  277  276]
+[image_projector-7]  [   0    0    0 ...  276  276  276]
+[image_projector-7]  [   0    0    0 ...  276  276  275]]
+[query-8] Traceback (most recent call last):
+[query-8]   File "/home/evas/Robopoint_Humble/install/robopoint_llm/lib/robopoint_llm/query", line 33, in <module>
+[query-8]     sys.exit(load_entry_point('robopoint-llm==0.0.0', 'console_scripts', 'query')())
+[query-8]   File "/home/evas/Robopoint_Humble/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm/query.py", line 131, in main
+[query-8]     rclpy.spin(query_service)
+[query-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[query-8]     executor.spin_once()
+[query-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[query-8]     self._spin_once_impl(timeout_sec)
+[query-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 748, in _spin_once_impl
+[query-8]     raise handler.exception()
+[query-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254, in __call__
+[query-8]     self._handler.send(None)
+[query-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 447, in handler
+[query-8]     await call_coroutine(entity, arg)
+[query-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 402, in _execute_service
+[query-8]     srv.send_response(response, header)
+[query-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/service.py", line 73, in send_response
+[query-8]     raise TypeError()
+[query-8] TypeError
+[move_arm-9] [INFO] [1749526428.428789804] [move_arm_node]: getting 3D coordinates successful. 
+[move_arm-9] [INFO] [1749526428.429504054] [move_arm_node]: 3D point in camera frame: 0.094, -0.054, 0.822
+[move_arm-9] [INFO] [1749526428.433851963] [move_arm_node]: Transformed 3D point in base_link frame: (0.094, 0.246, 1.122)
+[move_arm-9] [INFO] [1749526428.434333708] [move_arm_node]: Joint Positions: [0.0, -0.0002827433388230549, -0.000279252680319253, -0.00011868238913548268, 0.0, 0.026, -0.026]
+[move_arm-9] [INFO] [1749526428.434996961] [move_arm_node]: DID NOT ACTUALLY MOVE ARM - TESTING
+[ERROR] [query-8]: process has died [pid 5314, exit code 1, cmd '/home/evas/Robopoint_Humble/install/robopoint_llm/lib/robopoint_llm/query --filepath /home/evas/interbotix_ws/debug.jpg --ros-args'].

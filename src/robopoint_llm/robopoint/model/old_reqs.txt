@@ -1,0 +1,10 @@
+Installing collected packages: tokenizers, transformers
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.15.2
+    Uninstalling tokenizers-0.15.2:
+      Successfully uninstalled tokenizers-0.15.2
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.37.2
+    Uninstalling transformers-4.37.2:
+      Successfully uninstalled transformers-4.37.2
+Successfully installed tokenizers-0.21.1 transformers-4.52.4

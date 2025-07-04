@@ -1,0 +1,5 @@
+setuptools
+robopoint_interfaces
+
+[test]
+pytest

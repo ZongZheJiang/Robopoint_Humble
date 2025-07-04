@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "interbotix_moveit_interface_msgs__py",
+		"source" : "/home/evas/Robopoint_Humble/build/interbotix_moveit_interface_msgs/interbotix_moveit_interface_msgs__py"
+	}
+}

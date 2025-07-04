@@ -1,0 +1,2 @@
+[console_scripts]
+move_arm_node = robot_startup.move_arm:main

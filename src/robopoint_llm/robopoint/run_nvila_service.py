@@ -3,7 +3,7 @@ from typing import List, Union
 import torch
 from PIL import Image, ImageDraw
 import re, base64
-from robopoint.mm_utils import process_images, load_image_from_base64, tokenizer_image_token
+from robopoint.mm_utils import process_images, load_image_from_base64, tokenizer_image_token, get_model_name_from_path
 from robopoint.constants import DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IMAGE_TOKEN_INDEX
 from robopoint.model.builder import load_pretrained_model
 from robopoint.utils import disable_torch_init
@@ -36,17 +36,18 @@ quantization_config = BitsAndBytesConfig(
 
 class LLMService:
     def __init__(self):
-        disable_torch_init()
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path, subfolder = "llm")
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_path,
-            subfolder = "llm",
-            torch_dtype=torch.bfloat16,
+        tokenizer, model, image_processor, context_len = load_pretrained_model(
+            model_path=model_path,
+            model_base=None, # The builder script handles this automatically
+            model_name=get_model_name_from_path(model_path),
+            load_4bit=True, # This enables the 4-bit quantization
             device_map="auto",
-            quantization_config=quantization_config
+            trust_remote_code=True
         )
 
         vision_tower = self.model.get_vision_tower()
+        if not vision_tower.is_loaded:
+            vision_tower.load_model(device_map="auto")
         self.image_processor = vision_tower.image_processor
 
         if hasattr(self.model.config, "max_sequence_length"):

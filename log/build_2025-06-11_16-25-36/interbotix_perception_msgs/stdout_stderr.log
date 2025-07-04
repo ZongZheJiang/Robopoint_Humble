@@ -1,0 +1,70 @@
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_core: 1.3.11 (/opt/ros/humble/share/ament_cmake_core/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/evas/Robopoint_Humble/build/interbotix_perception_msgs
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  3%] Built target ament_cmake_python_copy_interbotix_perception_msgs
+running egg_info
+creating interbotix_perception_msgs.egg-info
+writing interbotix_perception_msgs.egg-info/PKG-INFO
+writing dependency_links to interbotix_perception_msgs.egg-info/dependency_links.txt
+writing top-level names to interbotix_perception_msgs.egg-info/top_level.txt
+writing manifest file 'interbotix_perception_msgs.egg-info/SOURCES.txt'
+reading manifest file 'interbotix_perception_msgs.egg-info/SOURCES.txt'
+Traceback (most recent call last):
+  File "/home/evas/Robopoint_Humble/build/interbotix_perception_msgs/ament_cmake_python/interbotix_perception_msgs/setup.py", line 4, in <module>
+    setup(
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+    return run_commands(dist)
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+    dist.run_commands()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+    self.run_command(cmd)
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+    super().run_command(command)
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+    cmd_obj.run()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 312, in run
+    self.find_sources()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+    mm.run()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 548, in run
+    self.prune_file_list()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/sdist.py", line 162, in prune_file_list
+    super().prune_file_list()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/command/sdist.py", line 386, in prune_file_list
+    base_dir = self.distribution.get_fullname()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 275, in get_fullname
+    return _distribution_fullname(self.get_name(), self.get_version())
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 293, in _distribution_fullname
+    canonicalize_version(version, strip_trailing_zero=False),
+TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_interbotix_perception_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_interbotix_perception_msgs_egg] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_interbotix_perception_msgs_egg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[  9%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/cluster_info_array__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/filter_params__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/snap_picture__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/msg/detail/cluster_info__functions.c.o[0m
+[ 12%] [32m[1mLinking C shared library libinterbotix_perception_msgs__rosidl_generator_c.so[0m
+[ 12%] Built target interbotix_perception_msgs__cpp
+[ 12%] Built target interbotix_perception_msgs__rosidl_generator_c
+gmake: *** [Makefile:146: all] Error 2

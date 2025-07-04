@@ -1,0 +1,53 @@
+[  2%] Built target robopoint_interfaces__cpp
+[ 12%] Built target robopoint_interfaces__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_robopoint_interfaces
+[ 23%] Built target robopoint_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 36%] Built target robopoint_interfaces__rosidl_typesupport_introspection_c
+[ 44%] Built target robopoint_interfaces__rosidl_typesupport_cpp
+[ 55%] Built target robopoint_interfaces__rosidl_typesupport_introspection_cpp
+[ 68%] Built target robopoint_interfaces__rosidl_typesupport_c
+[ 76%] Built target robopoint_interfaces__rosidl_typesupport_fastrtps_c
+[ 76%] Built target robopoint_interfaces
+[ 78%] Built target robopoint_interfaces__py
+[ 87%] Built target robopoint_interfaces__rosidl_generator_py
+[ 93%] Built target robopoint_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[ 95%] Built target robopoint_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target robopoint_interfaces__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing robopoint_interfaces.egg-info/PKG-INFO
+writing dependency_links to robopoint_interfaces.egg-info/dependency_links.txt
+writing top-level names to robopoint_interfaces.egg-info/top_level.txt
+reading manifest file 'robopoint_interfaces.egg-info/SOURCES.txt'
+Traceback (most recent call last):
+  File "/home/evas/Robopoint_Humble/build/robopoint_interfaces/ament_cmake_python/robopoint_interfaces/setup.py", line 4, in <module>
+    setup(
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+    return run_commands(dist)
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+    dist.run_commands()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+    self.run_command(cmd)
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+    super().run_command(command)
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+    cmd_obj.run()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 312, in run
+    self.find_sources()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+    mm.run()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 548, in run
+    self.prune_file_list()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/sdist.py", line 162, in prune_file_list
+    super().prune_file_list()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/command/sdist.py", line 386, in prune_file_list
+    base_dir = self.distribution.get_fullname()
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 275, in get_fullname
+    return _distribution_fullname(self.get_name(), self.get_version())
+  File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 293, in _distribution_fullname
+    canonicalize_version(version, strip_trailing_zero=False),
+TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

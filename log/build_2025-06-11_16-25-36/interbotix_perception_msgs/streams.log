@@ -1,0 +1,71 @@
+[0.186s] Invoking command in '/home/evas/Robopoint_Humble/build/interbotix_perception_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/robopoint_interfaces:/home/evas/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/evas/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/evas/interbotix_ws/install/interbotix_moveit_interface:/home/evas/interbotix_ws/install/moveit_visual_tools:/home/evas/interbotix_ws/install/interbotix_ros_xsarms:/home/evas/interbotix_ws/install/interbotix_xsarm_moveit:/home/evas/interbotix_ws/install/interbotix_xsarm_sim:/home/evas/interbotix_ws/install/interbotix_xsarm_ros_control:/home/evas/interbotix_ws/install/interbotix_xsarm_puppet:/home/evas/interbotix_ws/install/interbotix_xsarm_perception:/home/evas/interbotix_ws/install/interbotix_xsarm_joy:/home/evas/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/evas/interbotix_ws/install/interbotix_xsarm_dual:/home/evas/interbotix_ws/install/interbotix_xsarm_control:/home/evas/interbotix_ws/install/interbotix_xsarm_descriptions:/home/evas/interbotix_ws/install/interbotix_xs_toolbox:/home/evas/interbotix_ws/install/interbotix_xs_rviz:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_ros_xseries:/home/evas/interbotix_ws/install/interbotix_xs_sdk:/home/evas/interbotix_ws/install/interbotix_xs_ros_control:/home/evas/interbotix_ws/install/interbotix_perception_toolbox:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_toolbox:/home/evas/interbotix_ws/install/interbotix_gravity_compensation:/home/evas/interbotix_ws/install/interbotix_xs_msgs:/home/evas/interbotix_ws/install/interbotix_xs_driver:/home/evas/interbotix_ws/install/interbotix_tf_tools:/home/evas/interbotix_ws/install/interbotix_perception_pipelines:/home/evas/interbotix_ws/install/interbotix_perception_msgs:/home/evas/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/evas/interbotix_ws/install/interbotix_common_sim:/home/evas/interbotix_ws/install/interbotix_common_modules:/home/evas/interbotix_ws/install/dynamixel_workbench_toolbox:/opt/ros/humble /usr/bin/cmake --build /home/evas/Robopoint_Humble/build/interbotix_perception_msgs -- -j16 -l16
+[0.393s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.394s] -- Found ament_cmake_core: 1.3.11 (/opt/ros/humble/share/ament_cmake_core/cmake)
+[0.394s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.394s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.420s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.440s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.465s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.481s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.901s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.270s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.742s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.772s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.803s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.803s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.803s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.917s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.940s] -- Configuring done
+[1.993s] -- Generating done
+[2.010s] -- Build files have been written to: /home/evas/Robopoint_Humble/build/interbotix_perception_msgs
+[2.043s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.057s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.078s] [  3%] Built target ament_cmake_python_copy_interbotix_perception_msgs
+[2.424s] running egg_info
+[2.445s] creating interbotix_perception_msgs.egg-info
+[2.445s] writing interbotix_perception_msgs.egg-info/PKG-INFO
+[2.445s] writing dependency_links to interbotix_perception_msgs.egg-info/dependency_links.txt
+[2.445s] writing top-level names to interbotix_perception_msgs.egg-info/top_level.txt
+[2.445s] writing manifest file 'interbotix_perception_msgs.egg-info/SOURCES.txt'
+[2.505s] reading manifest file 'interbotix_perception_msgs.egg-info/SOURCES.txt'
+[2.528s] Traceback (most recent call last):
+[2.528s]   File "/home/evas/Robopoint_Humble/build/interbotix_perception_msgs/ament_cmake_python/interbotix_perception_msgs/setup.py", line 4, in <module>
+[2.528s]     setup(
+[2.528s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+[2.529s]     return distutils.core.setup(**attrs)
+[2.529s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+[2.529s]     return run_commands(dist)
+[2.529s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+[2.529s]     dist.run_commands()
+[2.529s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+[2.529s]     self.run_command(cmd)
+[2.529s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+[2.529s]     super().run_command(command)
+[2.529s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+[2.529s]     cmd_obj.run()
+[2.529s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 312, in run
+[2.530s]     self.find_sources()
+[2.530s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+[2.530s]     mm.run()
+[2.530s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 548, in run
+[2.530s]     self.prune_file_list()
+[2.530s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/sdist.py", line 162, in prune_file_list
+[2.530s]     super().prune_file_list()
+[2.530s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/command/sdist.py", line 386, in prune_file_list
+[2.530s]     base_dir = self.distribution.get_fullname()
+[2.530s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 275, in get_fullname
+[2.530s]     return _distribution_fullname(self.get_name(), self.get_version())
+[2.530s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 293, in _distribution_fullname
+[2.530s]     canonicalize_version(version, strip_trailing_zero=False),
+[2.531s] TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'
+[2.565s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_interbotix_perception_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_interbotix_perception_msgs_egg] Error 1
+[2.565s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_interbotix_perception_msgs_egg.dir/all] Error 2
+[2.565s] gmake[1]: *** Waiting for unfinished jobs....
+[2.996s] [  9%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/cluster_info_array__functions.c.o[0m
+[2.996s] [  9%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/filter_params__functions.c.o[0m
+[2.996s] [  9%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/srv/detail/snap_picture__functions.c.o[0m
+[2.998s] [ 10%] [32mBuilding C object CMakeFiles/interbotix_perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/interbotix_perception_msgs/msg/detail/cluster_info__functions.c.o[0m
+[3.059s] [ 12%] [32m[1mLinking C shared library libinterbotix_perception_msgs__rosidl_generator_c.so[0m
+[3.064s] [ 12%] Built target interbotix_perception_msgs__cpp
+[3.090s] [ 12%] Built target interbotix_perception_msgs__rosidl_generator_c
+[3.091s] gmake: *** [Makefile:146: all] Error 2

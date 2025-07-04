@@ -11,3 +11,12 @@ Not sure why CUDA sometimes become unavailable, apparently the NVIDIA Driver Ver
 
 # Check Torch and CUDA version
 python3 -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA version PyTorch was built with: {torch.version.cuda}'); print(f'Is CUDA available to PyTorch: {torch.cuda.is_available()}')"
+
+../scripts/finetune_llama2.sh 
+
+gnome-terminal -- bash --norc
+
+gedit ~/.bashrc
+alias clean-term="gnome-terminal -- bash --norc"
+
+clean-term

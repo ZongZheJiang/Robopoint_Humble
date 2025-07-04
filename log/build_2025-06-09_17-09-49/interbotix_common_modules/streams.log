@@ -1,0 +1,20 @@
+[1.683s] Invoking command in '/home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules': PYTHONPATH=/home/evas/Robopoint_Humble/build/interbotix_common_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/interbotix_common_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/interbotix_common_modules build --build-base /home/evas/Robopoint_Humble/build/interbotix_common_modules/build install --record /home/evas/Robopoint_Humble/build/interbotix_common_modules/install.log --single-version-externally-managed install_data
+[2.031s] running egg_info
+[2.032s] writing ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/PKG-INFO
+[2.033s] writing dependency_links to ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/dependency_links.txt
+[2.033s] writing entry points to ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/entry_points.txt
+[2.033s] writing requirements to ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/requires.txt
+[2.033s] writing top-level names to ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/top_level.txt
+[2.036s] reading manifest file '../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/SOURCES.txt'
+[2.038s] writing manifest file '../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/SOURCES.txt'
+[2.038s] running build
+[2.038s] running build_py
+[2.039s] running install
+[2.040s] running install_lib
+[2.042s] running install_data
+[2.042s] running install_egg_info
+[2.045s] removing '/home/evas/Robopoint_Humble/install/interbotix_common_modules/lib/python3.10/site-packages/interbotix_common_modules-0.0.0-py3.10.egg-info' (and everything under it)
+[2.045s] Copying ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info to /home/evas/Robopoint_Humble/install/interbotix_common_modules/lib/python3.10/site-packages/interbotix_common_modules-0.0.0-py3.10.egg-info
+[2.046s] running install_scripts
+[2.080s] writing list of installed files to '/home/evas/Robopoint_Humble/build/interbotix_common_modules/install.log'
+[2.116s] Invoked command in '/home/evas/Robopoint_Humble/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules' returned '0': PYTHONPATH=/home/evas/Robopoint_Humble/build/interbotix_common_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/interbotix_common_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/interbotix_common_modules build --build-base /home/evas/Robopoint_Humble/build/interbotix_common_modules/build install --record /home/evas/Robopoint_Humble/build/interbotix_common_modules/install.log --single-version-externally-managed install_data

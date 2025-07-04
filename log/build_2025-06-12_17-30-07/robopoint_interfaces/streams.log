@@ -1,0 +1,54 @@
+[0.231s] Invoking command in '/home/evas/Robopoint_Humble/build/robopoint_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evas/interbotix_ws/install/robot_startup:/home/evas/interbotix_ws/install/robot_control:/home/evas/interbotix_ws/install/robopoint_llm:/home/evas/interbotix_ws/install/image_projector:/home/evas/interbotix_ws/install/robopoint_interfaces:/home/evas/interbotix_ws/install/interbotix_ros_xsarms_examples:/home/evas/interbotix_ws/install/interbotix_xsarm_moveit_interface:/home/evas/interbotix_ws/install/interbotix_moveit_interface:/home/evas/interbotix_ws/install/moveit_visual_tools:/home/evas/interbotix_ws/install/interbotix_ros_xsarms:/home/evas/interbotix_ws/install/interbotix_xsarm_moveit:/home/evas/interbotix_ws/install/interbotix_xsarm_sim:/home/evas/interbotix_ws/install/interbotix_xsarm_ros_control:/home/evas/interbotix_ws/install/interbotix_xsarm_puppet:/home/evas/interbotix_ws/install/interbotix_xsarm_perception:/home/evas/interbotix_ws/install/interbotix_xsarm_joy:/home/evas/interbotix_ws/install/interbotix_xsarm_gravity_compensation:/home/evas/interbotix_ws/install/interbotix_xsarm_dual:/home/evas/interbotix_ws/install/interbotix_xsarm_control:/home/evas/interbotix_ws/install/interbotix_xsarm_descriptions:/home/evas/interbotix_ws/install/interbotix_xs_toolbox:/home/evas/interbotix_ws/install/interbotix_xs_rviz:/home/evas/interbotix_ws/install/interbotix_xs_modules:/home/evas/interbotix_ws/install/interbotix_ros_xseries:/home/evas/interbotix_ws/install/interbotix_xs_sdk:/home/evas/interbotix_ws/install/interbotix_xs_ros_control:/home/evas/interbotix_ws/install/interbotix_perception_toolbox:/home/evas/interbotix_ws/install/interbotix_perception_modules:/home/evas/interbotix_ws/install/interbotix_common_toolbox:/home/evas/interbotix_ws/install/interbotix_gravity_compensation:/home/evas/interbotix_ws/install/interbotix_xs_msgs:/home/evas/interbotix_ws/install/interbotix_xs_driver:/home/evas/interbotix_ws/install/interbotix_tf_tools:/home/evas/interbotix_ws/install/interbotix_perception_pipelines:/home/evas/interbotix_ws/install/interbotix_perception_msgs:/home/evas/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/evas/interbotix_ws/install/interbotix_common_sim:/home/evas/interbotix_ws/install/interbotix_common_modules:/home/evas/interbotix_ws/install/dynamixel_workbench_toolbox:/opt/ros/humble /usr/bin/cmake --build /home/evas/Robopoint_Humble/build/robopoint_interfaces -- -j16 -l16
+[0.537s] [  2%] Built target robopoint_interfaces__cpp
+[0.537s] [ 12%] Built target robopoint_interfaces__rosidl_generator_c
+[0.537s] [ 12%] Built target ament_cmake_python_copy_robopoint_interfaces
+[0.537s] [ 23%] Built target robopoint_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.537s] [ 36%] Built target robopoint_interfaces__rosidl_typesupport_introspection_c
+[0.537s] [ 44%] Built target robopoint_interfaces__rosidl_typesupport_cpp
+[0.537s] [ 55%] Built target robopoint_interfaces__rosidl_typesupport_introspection_cpp
+[0.537s] [ 68%] Built target robopoint_interfaces__rosidl_typesupport_c
+[0.537s] [ 76%] Built target robopoint_interfaces__rosidl_typesupport_fastrtps_c
+[0.537s] [ 76%] Built target robopoint_interfaces
+[0.537s] [ 78%] Built target robopoint_interfaces__py
+[0.537s] [ 87%] Built target robopoint_interfaces__rosidl_generator_py
+[0.537s] [ 93%] Built target robopoint_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.538s] [ 95%] Built target robopoint_interfaces__rosidl_typesupport_c__pyext
+[0.538s] [100%] Built target robopoint_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.539s] running egg_info
+[0.546s] writing robopoint_interfaces.egg-info/PKG-INFO
+[0.546s] writing dependency_links to robopoint_interfaces.egg-info/dependency_links.txt
+[0.546s] writing top-level names to robopoint_interfaces.egg-info/top_level.txt
+[0.588s] reading manifest file 'robopoint_interfaces.egg-info/SOURCES.txt'
+[0.602s] Traceback (most recent call last):
+[0.602s]   File "/home/evas/Robopoint_Humble/build/robopoint_interfaces/ament_cmake_python/robopoint_interfaces/setup.py", line 4, in <module>
+[0.602s]     setup(
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+[0.603s]     return distutils.core.setup(**attrs)
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+[0.603s]     return run_commands(dist)
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+[0.603s]     dist.run_commands()
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+[0.603s]     self.run_command(cmd)
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+[0.603s]     super().run_command(command)
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+[0.603s]     cmd_obj.run()
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 312, in run
+[0.603s]     self.find_sources()
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+[0.603s]     mm.run()
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 548, in run
+[0.603s]     self.prune_file_list()
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/command/sdist.py", line 162, in prune_file_list
+[0.603s]     super().prune_file_list()
+[0.603s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_distutils/command/sdist.py", line 386, in prune_file_list
+[0.603s]     base_dir = self.distribution.get_fullname()
+[0.604s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 275, in get_fullname
+[0.604s]     return _distribution_fullname(self.get_name(), self.get_version())
+[0.604s]   File "/home/evas/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 293, in _distribution_fullname
+[0.604s]     canonicalize_version(version, strip_trailing_zero=False),
+[0.604s] TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'
+[0.624s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg] Error 1
+[0.624s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_robopoint_interfaces_egg.dir/all] Error 2
+[0.624s] gmake: *** [Makefile:146: all] Error 2

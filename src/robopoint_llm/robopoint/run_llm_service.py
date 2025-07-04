@@ -22,24 +22,24 @@ post = " Your answer should be formatted as a list of tuples, " \
         "normalized pixel locations of the points in the image. [/INST]"
 
 
-# model_name = "llava-llama-2-7b-lora"
-# model_base = "meta-llama/Llama-2-7b-chat-hf"
-# model_path = "wentao-yuan/robopoint-v1-llama-2-7b-lora"
-
-model_name = "llava-llama-2-7b"
-model_base = None
-model_path = "johnwee1/robopoint-v1-llama-2-7b"
-
-# model_name = "NVILA-Lite-8B"
+# model_name = "robopoint-v1-vicuna-v1.5-13b"
 # model_base = None
-# model_path = "WallyLovesCats/NVILA-Lite-8B"
+# model_path = "wentao-yuan/robopoint-v1-vicuna-v1.5-13b"
+
+# model_name = "llava-llama-2-7b"
+# model_base = None
+# model_path = "johnwee1/robopoint-v1-llama-2-7b"
+
+model_name = "llava-v1.6-vicuna-7b"
+model_base = None
+model_path = "liuhaotian/llava-v1.6-vicuna-7b"
 
 
 
 class LLMService:
     def __init__(self):
         disable_torch_init()
-        self.tokenizer, self.model, self.image_processor, self.context_len = load_pretrained_model(model_path, model_base, model_name, load_4bit=True)
+        self.tokenizer, self.model, self.image_processor, self.context_len = load_pretrained_model(model_path, model_base, model_name)
         print("context length:")
         print(self.context_len)
 

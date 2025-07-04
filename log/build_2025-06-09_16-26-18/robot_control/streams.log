@@ -1,0 +1,41 @@
+[1.548s] Invoking command in '/home/evas/Robopoint_Humble/src/robot_control': PYTHONPATH=/home/evas/Robopoint_Humble/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_control build --build-base /home/evas/Robopoint_Humble/build/robot_control/build install --record /home/evas/Robopoint_Humble/build/robot_control/install.log --single-version-externally-managed install_data
+[1.879s] running egg_info
+[1.879s] creating ../../build/robot_control/robot_control.egg-info
+[1.879s] writing ../../build/robot_control/robot_control.egg-info/PKG-INFO
+[1.880s] writing dependency_links to ../../build/robot_control/robot_control.egg-info/dependency_links.txt
+[1.880s] writing entry points to ../../build/robot_control/robot_control.egg-info/entry_points.txt
+[1.880s] writing requirements to ../../build/robot_control/robot_control.egg-info/requires.txt
+[1.882s] writing top-level names to ../../build/robot_control/robot_control.egg-info/top_level.txt
+[1.882s] writing manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'
+[1.882s] reading manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'
+[1.882s] adding license file 'LICENSE'
+[1.883s] writing manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'
+[1.884s] running build
+[1.884s] running build_py
+[1.884s] creating /home/evas/Robopoint_Humble/build/robot_control/build
+[1.884s] creating /home/evas/Robopoint_Humble/build/robot_control/build/lib
+[1.884s] creating /home/evas/Robopoint_Humble/build/robot_control/build/lib/robot_control
+[1.884s] copying robot_control/endpoint_calculator.py -> /home/evas/Robopoint_Humble/build/robot_control/build/lib/robot_control
+[1.884s] copying robot_control/move_arm.py -> /home/evas/Robopoint_Humble/build/robot_control/build/lib/robot_control
+[1.884s] copying robot_control/__init__.py -> /home/evas/Robopoint_Humble/build/robot_control/build/lib/robot_control
+[1.884s] running install
+[1.884s] running install_lib
+[1.885s] creating /home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages/robot_control
+[1.885s] copying /home/evas/Robopoint_Humble/build/robot_control/build/lib/robot_control/endpoint_calculator.py -> /home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages/robot_control
+[1.885s] copying /home/evas/Robopoint_Humble/build/robot_control/build/lib/robot_control/move_arm.py -> /home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages/robot_control
+[1.885s] copying /home/evas/Robopoint_Humble/build/robot_control/build/lib/robot_control/__init__.py -> /home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages/robot_control
+[1.886s] byte-compiling /home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages/robot_control/endpoint_calculator.py to endpoint_calculator.cpython-310.pyc
+[1.886s] byte-compiling /home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages/robot_control/move_arm.py to move_arm.cpython-310.pyc
+[1.887s] byte-compiling /home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages/robot_control/__init__.py to __init__.cpython-310.pyc
+[1.887s] running install_data
+[1.887s] creating /home/evas/Robopoint_Humble/install/robot_control/share/ament_index
+[1.887s] creating /home/evas/Robopoint_Humble/install/robot_control/share/ament_index/resource_index
+[1.887s] creating /home/evas/Robopoint_Humble/install/robot_control/share/ament_index/resource_index/packages
+[1.888s] copying resource/robot_control -> /home/evas/Robopoint_Humble/install/robot_control/share/ament_index/resource_index/packages
+[1.888s] copying package.xml -> /home/evas/Robopoint_Humble/install/robot_control/share/robot_control
+[1.888s] running install_egg_info
+[1.890s] Copying ../../build/robot_control/robot_control.egg-info to /home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages/robot_control-0.0.0-py3.10.egg-info
+[1.890s] running install_scripts
+[1.913s] Installing move_arm script to /home/evas/Robopoint_Humble/install/robot_control/lib/robot_control
+[1.914s] writing list of installed files to '/home/evas/Robopoint_Humble/build/robot_control/install.log'
+[1.942s] Invoked command in '/home/evas/Robopoint_Humble/src/robot_control' returned '0': PYTHONPATH=/home/evas/Robopoint_Humble/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/evas/Robopoint_Humble/install/robot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_control build --build-base /home/evas/Robopoint_Humble/build/robot_control/build install --record /home/evas/Robopoint_Humble/build/robot_control/install.log --single-version-externally-managed install_data

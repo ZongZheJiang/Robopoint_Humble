@@ -1,0 +1,2 @@
+[console_scripts]
+move_arm = robot_control.move_arm:main

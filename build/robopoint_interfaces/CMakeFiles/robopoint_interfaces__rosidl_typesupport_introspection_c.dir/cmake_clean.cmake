@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robopoint_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/get3_d_coordinates__type_support.c.o"
+  "CMakeFiles/robopoint_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/get3_d_coordinates__type_support.c.o.d"
+  "CMakeFiles/robopoint_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/move_to_point__type_support.c.o"
+  "CMakeFiles/robopoint_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/move_to_point__type_support.c.o.d"
+  "CMakeFiles/robopoint_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/query__type_support.c.o"
+  "CMakeFiles/robopoint_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/query__type_support.c.o.d"
+  "librobopoint_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "librobopoint_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/get3_d_coordinates__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/get3_d_coordinates__type_support.c"
+  "rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/move_to_point__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/move_to_point__type_support.c"
+  "rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/query__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/robopoint_interfaces/srv/detail/query__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/robopoint_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

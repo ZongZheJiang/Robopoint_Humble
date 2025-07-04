@@ -1,0 +1,10 @@
+setup.py
+robopoint_interfaces/__init__.py
+robopoint_interfaces.egg-info/PKG-INFO
+robopoint_interfaces.egg-info/SOURCES.txt
+robopoint_interfaces.egg-info/dependency_links.txt
+robopoint_interfaces.egg-info/top_level.txt
+robopoint_interfaces/srv/__init__.py
+robopoint_interfaces/srv/_get3_d_coordinates.py
+robopoint_interfaces/srv/_move_to_point.py
+robopoint_interfaces/srv/_query.py
