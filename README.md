@@ -34,5 +34,6 @@ PX100
   - Streaming the data is a possible alternative, but RoboPoint authors adapted their training pipeline from [lmsys-FastChat](https://github.com/lm-sys/FastChat/tree/main), which necessitates download of dataset. While possible to adapt to data streaming, it requires substantial changes to exisitng training pipeline
 - Some areas of improvement for the project include checking whether it supports other models of robots, as well as to improve its accuracy in pointing
 - Explored NVILA and [VILA-HD](https://arxiv.org/pdf/2503.19903), preliminary testing indicates that VILA-HD has a different architecture from LLaMA and Vicuna models, but more research can be done to see if substitution can be done
+- Dockerising the ROS workspace and running a larger model (such as Vicuna 1.5 13B) is another possible alternative in improving accuracy of pipeline
 
 ROS Documentation: https://docs.ros.org/en/humble/index.html
