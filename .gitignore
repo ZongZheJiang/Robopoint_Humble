@@ -1,6 +1,7 @@
 src/realsense-ros/
 **/robopoint-data
-RoboPoint
-build
-install
-log
+**/RoboPoint/
+**/build/
+**/install/
+**/log/
+
