@@ -1,0 +1,28 @@
+# Filename: Dockerfile.base
+#
+# This version uses bash -x to trace the installer script's execution
+# and find the hidden reason it is exiting.
+
+FROM osrf/ros:humble-desktop
+
+ARG ROS_DISTRO=humble
+ENV ROS_DISTRO=${ROS_DISTRO}
+SHELL ["/bin/bash", "-c"]
+
+# STEP 1: Install prerequisites
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# STEP 2: Download and prepare the installation script
+WORKDIR /tmp
+RUN curl -L 'https://raw.githubusercontent.com/Interbotix/interbotix_ros_manipulators/main/interbotix_ros_xsarms/install/amd64/xsarm_amd64_install.sh' > xsarm_amd64_install.sh && \
+ chmod +x xsarm_amd64_install.sh && \
+ bash -x ./xsarm_amd64_install.sh -d ${ROS_DISTRO} -n
+
+# STEP 3: Clean up and reset working directory.
+# RUN rm -rf /tmp/xsarm_amd64_install.sh
+WORKDIR /root/interbotix_ws
+
+# The base image is now ready and contains all Interbotix packages.
+CMD ["bash"]

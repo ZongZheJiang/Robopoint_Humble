@@ -26,13 +26,13 @@ post = " Your answer should be formatted as a list of tuples, " \
 # model_base = None
 # model_path = "wentao-yuan/robopoint-v1-vicuna-v1.5-13b"
 
-# model_name = "llava-llama-2-7b"
-# model_base = None
-# model_path = "johnwee1/robopoint-v1-llama-2-7b"
-
-model_name = "llava-v1.6-vicuna-7b"
+model_name = "llava-llama-2-7b"
 model_base = None
-model_path = "liuhaotian/llava-v1.6-vicuna-7b"
+model_path = "johnwee1/robopoint-v1-llama-2-7b"
+
+# model_name = "llava-v1.6-vicuna-7b"
+# model_base = None
+# model_path = "liuhaotian/llava-v1.6-vicuna-7b"
 
 
 

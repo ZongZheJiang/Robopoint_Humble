@@ -20,3 +20,18 @@ gedit ~/.bashrc
 alias clean-term="gnome-terminal -- bash --norc"
 
 clean-term
+
+evas@evas-Precision-7560:~$ ip route show
+
+default via 10.10.8.1 dev wlp146s0 proto dhcp metric 40 
+default via 173.97.0.1 dev tun0 proto static metric 50 
+10.10.8.0/22 dev wlp146s0 proto kernel scope link src 10.10.10.12 metric 40 
+10.10.8.1 dev wlp146s0 proto static scope link metric 50 
+10.98.0.0/16 via 173.97.0.1 dev tun0 proto static metric 50 
+57.155.28.51 via 10.10.8.1 dev wlp146s0 proto static metric 50 
+169.254.0.0/16 dev docker0 scope link metric 1000 linkdown 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+173.97.0.0/25 dev tun0 proto kernel scope link src 173.97.0.2 metric 50 
+173.97.0.128/25 via 173.97.0.1 dev tun0 proto static metric 50 
+
+evas@evas-Precision-7560:~$ sudo nmcli connection modify "$(nmcli -t -f NAME,DEVICE connection show --active | grep wlp146s0 | cut -d: -f1)" ipv4.route-metric 40
