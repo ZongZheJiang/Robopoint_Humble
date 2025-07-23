@@ -1,0 +1,58 @@
+services:
+  # This is the main service for your development environment
+  robopoint_dev:
+    # Build the image from the Dockerfile in the current directory.
+    # The final image will be named 'robopoint_humble_overlay:dev'.
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: robopoint_humble_overlay:dev
+    container_name: robopoint_dev_container
+
+    # --- Configuration for ROS Development ---
+    network_mode: "host"
+    privileged: true
+    stdin_open: true
+    tty: true
+
+    # Mount your local source code directly into the container.
+    # This is the key to "live code editing".
+    volumes:
+      # Mount each of your ROS packages into the merged workspace's src directory
+      - ./src/robopoint_interfaces:/root/interbotix_ws/src/robopoint_interfaces
+      - ./src/robopoint_llm:/root/interbotix_ws/src/robopoint_llm
+      - ./src/robot_control:/root/interbotix_ws/src/robot_control
+      - ./src/robot_startup:/root/interbotix_ws/src/robot_startup
+      - ./src/image_projector:/root/interbotix_ws/src/image_projector
+      
+      # Mount the miscellaneous files into the workspace root
+      - ./reqs.txt:/root/interbotix_ws/reqs.txt
+      - ./debug.jpg:/root/interbotix_ws/debug.jpg
+      - ./point_viz.py:/root/interbotix_ws/point_viz.py
+      - ./commands.txt:/root/interbotix_ws/commands.txt
+      - ./troubleshooting.txt:/root/interbotix_ws/troubleshooting.txt
+      
+      # Mount the X11 socket for running GUI applications
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+
+    # --- GUI & GPU Acceleration Configuration ---
+
+    # Share the host's display for running GUI apps like RViz and Gazebo.
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      
+    # Enable GPU acceleration for NVIDIA cards.
+    # This makes RViz and Gazebo run smoothly.
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+    # The default command to run when the container starts.
+    # 'bash' is perfect for development, as it drops you into a
+    # fully-sourced shell where you can run any command.
+    command: bash
