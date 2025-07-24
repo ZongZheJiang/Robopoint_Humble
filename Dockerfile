@@ -5,7 +5,7 @@
 # It DEFINES THE ENTRYPOINT for the final application.
 
 # Tag your base image as 'turtlebot3-base' or use a registry path.
-FROM zongzhejiang/robopoint_ws:humble
+FROM zongzhejiang/robopoint_ws_base:latest
 
 ARG ROS_DISTRO=humble
 ENV ROS_DISTRO=${ROS_DISTRO}

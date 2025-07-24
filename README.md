@@ -1,9 +1,20 @@
-# Hardware  Requirements
+# Introduction 
+
+This is a project aimed at creating a pipeline that conducts certain actions based on a research paper on [Robopoint](https://arxiv.org/pdf/2406.10721).
+
+# Hardware Requirements
 
 Intel RealSense Depth Camera D435i
 PX100
 
 # How to Run
+
+## Docker
+
+`docker pull zongzhejiang/robopoint_ws_overlay:latest`<br>
+`docker compose run --rm robopoint_dev`<br>
+
+## Pulling from Repository 
 
 `pip install -r requirements.txt`<br>
 `source /opt/ros/humble/setup.bash`<br>
