@@ -24,6 +24,8 @@ PX100
 `source install/setup.bash`<br>
 `ros2 launch robot_startup full_system.launch.py`<br>
 
+**Note: I tried using a virtual environment, but the ROS workspace only acepted dependencies from `usr/bin/python3`. I'm not sure why this is so.**
+
 # Modules 
 
 ## Computer Generated Modules upon setting up of the workplace (CANNOT BE REMOVED):
