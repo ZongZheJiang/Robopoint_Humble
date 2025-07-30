@@ -1,173 +1,34 @@
-root@fd8e1a8692ff:~/interbotix_ws# ros2 launch robot_startup full_system.launch.py
-[INFO] [launch]: All log files can be found below /root/.ros/log/2025-07-23-07-06-46-823716-fd8e1a8692ff-45
-[INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [realsense2_camera_node-5]: process started with pid [55]
-[INFO] [xs_sdk_sim.py-1]: process started with pid [47]
-[INFO] [robot_state_publisher-2]: process started with pid [49]
-[INFO] [joint_state_publisher_gui-3]: process started with pid [51]
-[INFO] [rviz2-4]: process started with pid [53]
-[INFO] [static_transform_publisher-6]: process started with pid [57]
-[INFO] [image_projector-7]: process started with pid [59]
-[INFO] [query-8]: process started with pid [61]
-[INFO] [move_arm-9]: process started with pid [63]
-[static_transform_publisher-6] [INFO] [1753254407.004630114] [static_camera_transform_publisher]: Spinning until stopped - publishing transform
-[static_transform_publisher-6] translation: ('0.000000', '0.300000', '0.300000')
-[static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
-[static_transform_publisher-6] from 'base_link' to 'camera_link'
-[realsense2_camera_node-5] [INFO] [1753254407.083539319] [camera.camera]: RealSense ROS v4.55.1
-[realsense2_camera_node-5] [INFO] [1753254407.083642171] [camera.camera]: Built with LibRealSense v2.55.1
-[realsense2_camera_node-5] [INFO] [1753254407.083657231] [camera.camera]: Running with LibRealSense v2.55.1
-[realsense2_camera_node-5]  23/07 07:06:47,088 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.4.auto
-[realsense2_camera_node-5]  23/07 07:06:47,088 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.10.auto
-[realsense2_camera_node-5]  23/07 07:06:47,088 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.3.auto
-[realsense2_camera_node-5]  23/07 07:06:47,088 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.15.auto
-[realsense2_camera_node-5]  23/07 07:06:47,088 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.2.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.8.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.14.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.7.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.13.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.6.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.12.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.18.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.5.auto
-[realsense2_camera_node-5]  23/07 07:06:47,089 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.11.auto
-[realsense2_camera_node-5] [WARN] [1753254407.101512503] [camera.camera]: No RealSense devices were found!
-[ERROR] [rviz2-4]: process has died [pid 53, exit code -6, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /root/interbotix_ws/install/interbotix_xsarm_descriptions/share/interbotix_xsarm_descriptions/rviz/xsarm_description.rviz --ros-args -r __node:=rviz2 -r __ns:=/px100 --params-file /tmp/launch_params_soiujqr0'].
-[move_arm-9] Traceback (most recent call last):
-[move_arm-9]   File "/root/interbotix_ws/install/robot_control/lib/robot_control/move_arm", line 33, in <module>
-[move_arm-9]     sys.exit(load_entry_point('robot-control==0.0.0', 'console_scripts', 'move_arm')())
-[move_arm-9]   File "/root/interbotix_ws/install/robot_control/lib/robot_control/move_arm", line 25, in importlib_load_entry_point
-[move_arm-9]     return next(matches).load()
-[move_arm-9]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
-[move_arm-9]     module = import_module(match.group('module'))
-[move_arm-9]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
-[move_arm-9]     return _bootstrap._gcd_import(name[level:], package, level)
-[move_arm-9]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-[move_arm-9]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-[move_arm-9]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
-[move_arm-9]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
-[move_arm-9]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
-[move_arm-9]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-[move_arm-9]   File "/root/interbotix_ws/install/robot_control/lib/python3.10/site-packages/robot_control/move_arm.py", line 9, in <module>
-[move_arm-9]     from interbotix_xs_modules.xs_robot.arm import InterbotixManipulatorXS
-[move_arm-9]   File "/root/interbotix_ws/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/__init__.py", line 36, in <module>
-[move_arm-9]     from . import arm
-[move_arm-9]   File "/root/interbotix_ws/install/interbotix_xs_modules/lib/python3.10/site-packages/interbotix_xs_modules/xs_robot/arm.py", line 39, in <module>
-[move_arm-9]     import interbotix_common_modules.angle_manipulation as ang
-[move_arm-9]   File "/root/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages/interbotix_common_modules/angle_manipulation/__init__.py", line 29, in <module>
-[move_arm-9]     from .angle_manipulation import (
-[move_arm-9]   File "/root/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages/interbotix_common_modules/angle_manipulation/angle_manipulation.py", line 36, in <module>
-[move_arm-9]     from tf_transformations import euler_from_matrix, euler_matrix, quaternion_from_euler
-[move_arm-9]   File "/opt/ros/humble/lib/python3.10/site-packages/tf_transformations/__init__.py", line 46, in <module>
-[move_arm-9]     import transforms3d
-[move_arm-9]   File "/usr/lib/python3/dist-packages/transforms3d/__init__.py", line 10, in <module>
-[move_arm-9]     from . import quaternions
-[move_arm-9]   File "/usr/lib/python3/dist-packages/transforms3d/quaternions.py", line 26, in <module>
-[move_arm-9]     _MAX_FLOAT = np.maximum_sctype(np.float)
-[move_arm-9]   File "/usr/local/lib/python3.10/dist-packages/numpy/__init__.py", line 324, in __getattr__
-[move_arm-9]     raise AttributeError(__former_attrs__[attr])
-[move_arm-9] AttributeError: module 'numpy' has no attribute 'float'.
-[move_arm-9] `np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-[move_arm-9] The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
-[move_arm-9]     https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations. Did you mean: 'cfloat'?
-[ERROR] [joint_state_publisher_gui-3]: process has died [pid 51, exit code -6, cmd '/opt/ros/humble/lib/joint_state_publisher_gui/joint_state_publisher_gui --ros-args -r __ns:=/px100'].
-[xs_sdk_sim.py-1] Unknown tag "ros2_control" in /robot[@name='px100']
-[ERROR] [move_arm-9]: process has died [pid 63, exit code 1, cmd '/root/interbotix_ws/install/robot_control/lib/robot_control/move_arm --ros-args'].
-[xs_sdk_sim.py-1] [INFO] [1753254407.463211791] [interbotix_xs_sdk.xs_sdk_sim]: Loaded motor configs from `/root/interbotix_ws/install/interbotix_xsarm_control/share/interbotix_xsarm_control/config/px100.yaml`.
-[xs_sdk_sim.py-1] [INFO] [1753254407.464583716] [interbotix_xs_sdk.xs_sdk_sim]: Loaded mode configs from `/root/interbotix_ws/install/interbotix_xsarm_control/share/interbotix_xsarm_control/config/modes.yaml`.
-[xs_sdk_sim.py-1] [INFO] [1753254407.464972494] [interbotix_xs_sdk.xs_sdk_sim]: The operating mode for the 'all' group was changed to 'position'.
-[xs_sdk_sim.py-1] [INFO] [1753254407.465314997] [interbotix_xs_sdk.xs_sdk_sim]: The operating mode for the 'arm' group was changed to 'position'.
-[xs_sdk_sim.py-1] [INFO] [1753254407.474827198] [interbotix_xs_sdk.xs_sdk_sim]: Interbotix 'xs_sdk_sim' node is up!
-[realsense2_camera_node-5]  23/07 07:06:53,102 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.4.auto
-[realsense2_camera_node-5]  23/07 07:06:53,102 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.10.auto
-[realsense2_camera_node-5]  23/07 07:06:53,102 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.3.auto
-[realsense2_camera_node-5]  23/07 07:06:53,102 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.15.auto
-[realsense2_camera_node-5]  23/07 07:06:53,102 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.2.auto
-[realsense2_camera_node-5]  23/07 07:06:53,102 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.8.auto
-[realsense2_camera_node-5]  23/07 07:06:53,103 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.14.auto
-[realsense2_camera_node-5]  23/07 07:06:53,103 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.7.auto
-[realsense2_camera_node-5]  23/07 07:06:53,103 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.13.auto
-[realsense2_camera_node-5]  23/07 07:06:53,103 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.6.auto
-[realsense2_camera_node-5]  23/07 07:06:53,103 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.12.auto
-[realsense2_camera_node-5]  23/07 07:06:53,103 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.18.auto
-[realsense2_camera_node-5]  23/07 07:06:53,103 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.5.auto
-[realsense2_camera_node-5]  23/07 07:06:53,103 WARNING [140412188251712] (backend-hid.cpp:1280) Failed to read busnum/devnum. Custom HID Device Path: /sys/bus/platform/drivers/hid_sensor_custom/HID-SENSOR-2000e1.11.auto
-[realsense2_camera_node-5] [WARN] [1753254413.108756649] [camera.camera]: No RealSense devices were found!
-[query-8] Traceback (most recent call last):
-[query-8]   File "/root/interbotix_ws/install/robopoint_llm/lib/robopoint_llm/query", line 33, in <module>
-[query-8]     sys.exit(load_entry_point('robopoint-llm==0.0.0', 'console_scripts', 'query')())
-[query-8]   File "/root/interbotix_ws/install/robopoint_llm/lib/robopoint_llm/query", line 25, in importlib_load_entry_point
-[query-8]     return next(matches).load()
-[query-8]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
-[query-8]     module = import_module(match.group('module'))
-[query-8]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
-[query-8]     return _bootstrap._gcd_import(name[level:], package, level)
-[query-8]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-[query-8]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-[query-8]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
-[query-8]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
-[query-8]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
-[query-8]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-[query-8]   File "/root/interbotix_ws/install/robopoint_llm/lib/python3.10/site-packages/robopoint_llm/query.py", line 10, in <module>
-[query-8]     from robopoint.run_llm_service import llm_service
-[query-8]   File "/root/interbotix_ws/install/robopoint_llm/lib/python3.10/site-packages/robopoint/run_llm_service.py", line 185, in <module>
-[query-8]     llm_service = LLMService()
-[query-8]   File "/root/interbotix_ws/install/robopoint_llm/lib/python3.10/site-packages/robopoint/run_llm_service.py", line 42, in __init__
-[query-8]     self.tokenizer, self.model, self.image_processor, self.context_len = load_pretrained_model(model_path, model_base, model_name)
-[query-8]   File "/root/interbotix_ws/install/robopoint_llm/lib/python3.10/site-packages/robopoint/model/builder.py", line 113, in load_pretrained_model
-[query-8]     tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
-[query-8]   File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 896, in from_pretrained
-[query-8]     return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
-[query-8]   File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 2291, in from_pretrained
-[query-8]     return cls._from_pretrained(
-[query-8]   File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 2525, in _from_pretrained
-[query-8]     tokenizer = cls(*init_inputs, **init_kwargs)
-[query-8]   File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 171, in __init__
-[query-8]     self.sp_model = self.get_spm_processor(kwargs.pop("from_slow", False))
-[query-8]   File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 203, in get_spm_processor
-[query-8]     model_pb2 = import_protobuf(f"The new behaviour of {self.__class__.__name__} (with `self.legacy = False`)")
-[query-8]   File "/usr/local/lib/python3.10/dist-packages/transformers/convert_slow_tokenizer.py", line 43, in import_protobuf
-[query-8]     raise ImportError(PROTOBUF_IMPORT_ERROR.format(error_message))
-[query-8] ImportError: 
-[query-8] The new behaviour of LlamaTokenizer (with `self.legacy = False`) requires the protobuf library but it was not found in your environment. Checkout the instructions on the
-[query-8] installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
-[query-8] that match your environment. Please note that you may need to restart your runtime after installation.
-[query-8] 
-[ERROR] [query-8]: process has died [pid 61, exit code 1, cmd '/root/interbotix_ws/install/robopoint_llm/lib/robopoint_llm/query --filepath /home/evas/Robopoint_Humble/debug.jpg --ros-args'].
-^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-[realsense2_camera_node-5] [INFO] [1753254417.769757908] [rclcpp]: signal_handler(signum=2)
-[static_transform_publisher-6] [INFO] [1753254417.769822279] [rclcpp]: signal_handler(signum=2)
-[image_projector-7] Traceback (most recent call last):
-[image_projector-7]   File "/root/interbotix_ws/install/image_projector/lib/image_projector/image_projector", line 33, in <module>
-[image_projector-7]     sys.exit(load_entry_point('image-projector==0.0.0', 'console_scripts', 'image_projector')())
-[image_projector-7]   File "/root/interbotix_ws/install/image_projector/lib/python3.10/site-packages/image_projector/image_projector.py", line 142, in main
-[image_projector-7]     rclpy.spin(rgbd_subscriber)
-[image_projector-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
-[image_projector-7]     executor.spin_once()
-[image_projector-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
-[image_projector-7]     self._spin_once_impl(timeout_sec)
-[image_projector-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
-[image_projector-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
-[image_projector-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
-[image_projector-7]     return next(self._cb_iter)
-[image_projector-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 620, in _wait_for_ready_callbacks
-[image_projector-7]     wait_set.wait(timeout_nsec)
-[image_projector-7] KeyboardInterrupt
-[xs_sdk_sim.py-1] Keyboard interrupt caught. Shutting down safely...
-[xs_sdk_sim.py-1] Traceback (most recent call last):
-[xs_sdk_sim.py-1]   File "/root/interbotix_ws/install/interbotix_xs_sdk/lib/interbotix_xs_sdk/xs_sdk_sim.py", line 855, in <module>
-[xs_sdk_sim.py-1]     main()
-[xs_sdk_sim.py-1]   File "/root/interbotix_ws/install/interbotix_xs_sdk/lib/interbotix_xs_sdk/xs_sdk_sim.py", line 851, in main
-[xs_sdk_sim.py-1]     rclpy.shutdown()
-[xs_sdk_sim.py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
-[xs_sdk_sim.py-1]     _shutdown(context=context)
-[xs_sdk_sim.py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
-[xs_sdk_sim.py-1]     return context.shutdown()
-[xs_sdk_sim.py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
-[xs_sdk_sim.py-1]     self.__context.shutdown()
-[xs_sdk_sim.py-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
-[ERROR] [image_projector-7]: process has died [pid 59, exit code -2, cmd '/root/interbotix_ws/install/image_projector/lib/image_projector/image_projector --ros-args'].
-[INFO] [static_transform_publisher-6]: process has finished cleanly [pid 57]
-[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 49]
-[ERROR] [xs_sdk_sim.py-1]: process has died [pid 47, exit code 1, cmd '/root/interbotix_ws/install/interbotix_xs_sdk/lib/interbotix_xs_sdk/xs_sdk_sim.py --ros-args -r __node:=xs_sdk_sim -r __ns:=/px100 --params-file /tmp/launch_params_eakbhugo'].
-[INFO] [realsense2_camera_node-5]: process has finished cleanly [pid 55]
+evas@evas-Precision-7560:~/Robopoint_Humble$ sudo nmcli connection modify "$(nmcli -t -f NAME,DEVICE connection show --active | grep wlp146s0 | cut -d: -f1)" ipv4.route-metric 40
+[sudo] password for evas:   
+Error: unknown connection 'Associates
+SilverGate'.
+
+evas@evas-Precision-7560:~/Robopoint_Humble$ ip route show
+default via 173.97.0.1 dev tun0 proto static metric 40 
+default via 10.10.8.1 dev wlp146s0 proto dhcp metric 600 
+10.10.8.0/22 dev wlp146s0 proto kernel scope link src 10.10.11.30 metric 600 
+10.10.8.1 dev wlp146s0 proto static scope link metric 40 
+10.98.0.0/16 via 173.97.0.1 dev tun0 proto static metric 40 
+57.155.28.51 via 10.10.8.1 dev wlp146s0 proto static metric 40 
+169.254.0.0/16 dev wlp146s0 scope link metric 1000 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+173.97.0.0/25 dev tun0 proto kernel scope link src 173.97.0.2 metric 40 
+173.97.0.128/25 via 173.97.0.1 dev tun0 proto static metric 40 
+
+evas@evas-Precision-7560:~/Robopoint_Humble$ sudo nmcli connection modify Associates ipv4.route-metric 40
+
+evas@evas-Precision-7560:~/Robopoint_Humble$ ip route show
+default via 173.97.0.1 dev tun0 proto static metric 40 
+default via 10.10.8.1 dev wlp146s0 proto dhcp metric 600 
+10.10.8.0/22 dev wlp146s0 proto kernel scope link src 10.10.11.30 metric 600 
+10.10.8.1 dev wlp146s0 proto static scope link metric 40 
+10.98.0.0/16 via 173.97.0.1 dev tun0 proto static metric 40 
+57.155.28.51 via 10.10.8.1 dev wlp146s0 proto static metric 40 
+169.254.0.0/16 dev wlp146s0 scope link metric 1000 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+173.97.0.0/25 dev tun0 proto kernel scope link src 173.97.0.2 metric 40 
+173.97.0.128/25 via 173.97.0.1 dev tun0 proto static metric 40 
+
+evas@evas-Precision-7560:~/Robopoint_Humble$ sudo nmcli connection modify Silvergate ipv4.route-metric 40
+Error: unknown connection 'Silvergate'.
+evas@evas-Precision-7560:~/Robopoint_Humble$ 

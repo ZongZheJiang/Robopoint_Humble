@@ -12,7 +12,9 @@ PX100
 ## Docker
 
 `docker pull zongzhejiang/robopoint_ws_overlay:latest`<br>
-`docker compose run --rm robopoint_dev`<br>
+`docker run --rm -it --gpus="0,1,2,3" docker.io/zongzhejiang/robopoint_ws_overlay:latest`<br>
+
+**Note: `docker compose run --rm robopoint_dev` should work, but there was no gpu access when using Docker Compose. Needs to be debugged**
 
 ## Pulling from Repository 
 

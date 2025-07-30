@@ -1,12 +1,11 @@
 services:
   # This is the main service for your development environment
   robopoint_dev:
-    # Build the image from the Dockerfile in the current directory.
-    # The final image will be named 'robopoint_humble_overlay:dev'.
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: robopoint_humble_overlay:dev
+    # Building is only required if you have the local directory code, else comment it out
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: zongzhejiang/robopoint_ws_overlay:latest
     container_name: robopoint_dev_container
 
     # --- Configuration for ROS Development ---

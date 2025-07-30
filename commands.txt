@@ -35,3 +35,14 @@ default via 173.97.0.1 dev tun0 proto static metric 50
 173.97.0.128/25 via 173.97.0.1 dev tun0 proto static metric 50 
 
 evas@evas-Precision-7560:~$ sudo nmcli connection modify "$(nmcli -t -f NAME,DEVICE connection show --active | grep wlp146s0 | cut -d: -f1)" ipv4.route-metric 40
+
+# First, find your connection name again
+CONN_NAME="$(nmcli -t -f NAME,DEVICE connection show --active | grep wlp146s0 | cut -d: -f1)"
+
+# Now, modify the connection to ignore the auto-configured route from DHCP
+sudo nmcli connection modify "$CONN_NAME" ipv4.ignore-auto-routes yes
+
+# Re-apply the configuration by reactivating the connection
+sudo nmcli connection down "$CONN_NAME" && sudo nmcli connection up "$CONN_NAME"
+Connection 'SilverGate' successfully deactivated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/3)
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/12)
