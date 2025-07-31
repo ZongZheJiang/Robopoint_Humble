@@ -12,9 +12,10 @@ PX100
 ## Docker
 
 `docker pull zongzhejiang/robopoint_ws_overlay:latest`<br>
-`docker run --rm -it --gpus="0,1,2,3" docker.io/zongzhejiang/robopoint_ws_overlay:latest`<br>
+`docker run -it --gpus=all --network=host --env="DISPLAY" -v ~/.Xauthority:/root/.Xauthority:rw docker.io/zongzhejiang/robopoint_ws_overlay:latest`<br>
 
-**Note: `docker compose run --rm robopoint_dev` should work, but there was no gpu access when using Docker Compose. Needs to be debugged**
+**Note: `docker compose run --rm robopoint_dev` should work in theory, but there was no gpu access when using Docker Compose. Needs to be debugged.**
+
 
 ## Pulling from Repository 
 
@@ -44,7 +45,8 @@ PX100
 # Notes
 
 - MoveIt assumes that the robot has 6 degrees of freedom, but PX100 only has 4 degrees of freedom. Thus, some tweaking needed to be done.
-- The current setup uses robopoint-v1-llama-2-7b-lora, which has relatively low accuracy. One way was to use stronger models created by the authors, such as robopoint-v1-vicuna-v.15-13b. Another way is to train a model using the training method given by the authors in the following repo: https://github.com/wentaoyuan/RoboPoint/tree/master 
+- The current setup uses robopoint-v1-llama-2-7b-lora, which has relatively low accuracy. One way to improve accuracy was to use stronger models created by the authors, such as robopoint-v1-vicuna-v.15-13b. Another way is to train a model using the training method given by the authors in the following repo: https://github.com/wentaoyuan/RoboPoint/tree/master 
+  - robopoint-v1-vicuna-v1.5-13b works without errors when testing on the remote server within a docker container.
   - However, training requires the download of their dataset, which is ~300GB. 
   - Streaming the data is a possible alternative, but RoboPoint authors adapted their training pipeline from [lmsys-FastChat](https://github.com/lm-sys/FastChat/tree/main), which necessitates download of dataset. While possible to adapt to data streaming, it requires substantial changes to exisitng training pipeline
 - Some areas of improvement for the project include checking whether it supports other models of robots, as well as to improve its accuracy in pointing
